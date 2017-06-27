@@ -1,0 +1,70 @@
+"<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:ns=\"http://www.id3global.com/ID3gWS/2013/04\">
+   <soap:Header/>
+   <soap:Body>
+      <ns:AuthenticateSPResponse>
+                  <ns:AuthenticateSPResult>
+                        <ns:AuthenticationID>" + ID + "</ns:AuthenticationID>
+                        <ns:Timestamp>?</ns:Timestamp>
+                        <ns:CustomerRef>?</ns:CustomerRef>
+                        <ns:ProfileID>?</ns:ProfileID>
+                        <ns:ProfileName>?</ns:ProfileName>
+                        <ns:ProfileVersion>?</ns:ProfileVersion>
+                        <ns:ProfileRevision>?</ns:ProfileRevision>
+                        <ns:ProfileState>?</ns:ProfileState>
+                        <ns:ResultCodes>
+               <!--Zero or more repetitions:-->
+               <ns:GlobalItemCheckResultCodes>
+                                    <ns:Name>?</ns:Name>
+                                    <ns:Description>?</ns:Description>
+                                    <ns:Comment>
+                     <!--Zero or more repetitions:-->
+                     <ns:GlobalItemCheckResultCode>
+                                                <ns:Description>?</ns:Description>
+                                                <ns:Code>?</ns:Code>
+                                                <ns:Override>?</ns:Override>
+                     </ns:GlobalItemCheckResultCode>
+                  </ns:Comment>
+                                    <ns:Match>
+                     <!--Zero or more repetitions:-->
+                     <ns:GlobalItemCheckResultCode>
+                                                <ns:Description>?</ns:Description>
+                                                <ns:Code>?</ns:Code>
+                                                <ns:Override>?</ns:Override>
+                     </ns:GlobalItemCheckResultCode>
+                  </ns:Match>
+                                    <ns:Warning>
+                     <!--Zero or more repetitions:-->
+                     <ns:GlobalItemCheckResultCode>
+                                                <ns:Description>?</ns:Description>
+                                                <ns:Code>?</ns:Code>
+                                                <ns:Override>?</ns:Override>
+                     </ns:GlobalItemCheckResultCode>
+                  </ns:Warning>
+                                    <ns:Mismatch>
+                     <!--Zero or more repetitions:-->
+                     <ns:GlobalItemCheckResultCode>
+                                                <ns:Description>?</ns:Description>
+                                                <ns:Code>?</ns:Code>
+                                                <ns:Override>?</ns:Override>
+                     </ns:GlobalItemCheckResultCode>
+                  </ns:Mismatch>
+                                    <ns:ID>?</ns:ID>
+                                    <ns:Pass>?</ns:Pass>
+                                    <ns:Address>?</ns:Address>
+                                    <ns:Forename>?</ns:Forename>
+                                    <ns:Surname>?</ns:Surname>
+                                    <ns:DOB>?</ns:DOB>
+                                    <ns:Alert>?</ns:Alert>
+                                    <ns:Country>?</ns:Country>
+               </ns:GlobalItemCheckResultCodes>
+            </ns:ResultCodes>
+                        <ns:Score>?</ns:Score>
+                        <ns:BandText>?</ns:BandText>
+                        <ns:UserBreakpoint>?</ns:UserBreakpoint>
+                        <ns:NoRetry>?</ns:NoRetry>
+                        <ns:ChainID>?</ns:ChainID>
+                        <ns:Country>?</ns:Country>
+         </ns:AuthenticateSPResult>
+      </ns:AuthenticateSPResponse>
+   </soap:Body>
+</soap:Envelope>"

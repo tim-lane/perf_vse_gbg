@@ -1,0 +1,1 @@
+C:\_git\perf_vse_gbg\mb.cmd restart C:\_git\perf_vse_gbg\mb.pid

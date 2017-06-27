@@ -1,0 +1,30 @@
+function (request, state, logger) {
+    var today = new Date();
+
+var parseString = require('xml2js').parseString;
+
+var xml = request.body;
+
+
+	parseString(xml, function (err, result));
+	var json_body = JSON.parse(JSON.stringify(result));
+
+			
+	// Fixed Odds single bet
+	logger.info('Authenticate SP');
+	
+		
+	return {
+			headers: {
+				'Content-Type': 'application/json',
+				'Connection': 'Keep-Alive'
+			},
+			body: {
+			
+			json_body
+			
+			}
+					
+		};		
+	
+}

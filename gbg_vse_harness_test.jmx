@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.0 r1743807">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1496626862000</longProp>
+        <longProp name="ThreadGroup.end_time">1496626862000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="SVE_IP" elementType="Argument">
+              <stringProp name="Argument.name">SVE_IP</stringProp>
+              <stringProp name="Argument.value">localhost</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="SVE_PORT" elementType="Argument">
+              <stringProp name="Argument.name">SVE_PORT</stringProp>
+              <stringProp name="Argument.value">8080</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="accountNumber" elementType="Argument">
+              <stringProp name="Argument.name">accountNumber</stringProp>
+              <stringProp name="Argument.value">12345678</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="accountPassword" elementType="Argument">
+              <stringProp name="Argument.name">accountPassword</stringProp>
+              <stringProp name="Argument.value">Password1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="propNumber" elementType="Argument">
+              <stringProp name="Argument.name">propNumber</stringProp>
+              <stringProp name="Argument.value">1234</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ticketSerialNumber" elementType="Argument">
+              <stringProp name="Argument.name">ticketSerialNumber</stringProp>
+              <stringProp name="Argument.value">123456789</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="deviceId" elementType="Argument">
+              <stringProp name="Argument.name">deviceId</stringProp>
+              <stringProp name="Argument.value">001301</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="deviceType" elementType="Argument">
+              <stringProp name="Argument.name">deviceType</stringProp>
+              <stringProp name="Argument.value">71</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="channel" elementType="Argument">
+              <stringProp name="Argument.name">channel</stringProp>
+              <stringProp name="Argument.value">0c</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="betType" elementType="Argument">
+              <stringProp name="Argument.name">betType</stringProp>
+              <stringProp name="Argument.value">FIXED_ODDS</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="odds" elementType="Argument">
+              <stringProp name="Argument.name">odds</stringProp>
+              <stringProp name="Argument.value">1.1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="stake" elementType="Argument">
+              <stringProp name="Argument.name">stake</stringProp>
+              <stringProp name="Argument.value">10.00</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="channelLocation" elementType="Argument">
+              <stringProp name="Argument.name">channelLocation</stringProp>
+              <stringProp name="Argument.value">ABACUS</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="placeOdds" elementType="Argument">
+              <stringProp name="Argument.name">placeOdds</stringProp>
+              <stringProp name="Argument.value">2.1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="multiLegs" elementType="Argument">
+              <stringProp name="Argument.name">multiLegs</stringProp>
+              <stringProp name="Argument.value">3456</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="combinedPrice" elementType="Argument">
+              <stringProp name="Argument.name">combinedPrice</stringProp>
+              <stringProp name="Argument.value">1234.56</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="bundleBetMessage" elementType="Argument">
+              <stringProp name="Argument.name">bundleBetMessage</stringProp>
+              <stringProp name="Argument.value">5678.90</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="offerAmount" elementType="Argument">
+              <stringProp name="Argument.name">offerAmount</stringProp>
+              <stringProp name="Argument.value">2500</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip WIN" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: true,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: true&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;WIN&quot;,&#xd;
+      &quot;stake&quot;: &quot;${stake}&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+        {&#xd;
+          &quot;type&quot;: &quot;WIN&quot;,&#xd;
+          &quot;propositionId&quot;: ${propNumber},&#xd;
+          &quot;odds&quot;: &quot;${odds}&quot;&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip PLACE" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: true,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: true&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;PLACE&quot;,&#xd;
+      &quot;stake&quot;: &quot;${stake}&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+        {&#xd;
+          &quot;type&quot;: &quot;WIN&quot;,&#xd;
+          &quot;propositionId&quot;: ${propNumber},&#xd;
+          &quot;odds&quot;: &quot;${odds}&quot;&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip EACH_WAY" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: false,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: false&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;FIXED_ODDS&quot;,&#xd;
+      &quot;stake&quot;: &quot;1.00&quot;,&#xd;
+      &quot;secondaryStake&quot;: &quot;1.00&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+        {&#xd;
+          &quot;type&quot;: &quot;EACH_WAY&quot;,&#xd;
+          &quot;propositionId&quot;: ${propNumber},&#xd;
+          &quot;odds&quot;: &quot;${odds}&quot;,&#xd;
+          &quot;secondaryOdds&quot;: &quot;${placeOdds}&quot;&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;combinedPrice&quot;: &quot;${placeOdds}&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip MULTI" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: false,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: false&#xd;
+    }&#xd;
+  },&#xd;
+   &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;FIXED_ODDS&quot;,&#xd;
+      &quot;stake&quot;: &quot;${stake}&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+       ${multiLegs}&#xd;
+      ],&#xd;
+      &quot;combinedPrice&quot;: ${combinedPrice}&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip BUNDLE" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: false,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: false&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;FIXED_ODDS&quot;,&#xd;
+      &quot;stake&quot;: &quot;1.0&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+       ${bundleBetMessage}&#xd;
+      ],&#xd;
+      &quot;combinedPrice&quot;: &quot;${combinedPrice}&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ns=&quot;http://www.id3global.com/ID3gWS/2013/04&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;&#xd;
+	&lt;soapenv:Header/&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;ns:AuthenticateSP&gt;&#xd;
+			&lt;ns:ProfileIDVersion&gt;&#xd;
+				&lt;ns:ID&gt;a0f29d6f-2cb6-4009-b1bd-6c9c876ca70b&lt;/ns:ID&gt;&#xd;
+				&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+			&lt;/ns:ProfileIDVersion&gt;&#xd;
+			&lt;ns:CustomerReference&gt;amltest007&lt;/ns:CustomerReference&gt;&#xd;
+			&lt;ns:InputData&gt;&#xd;
+				&lt;ns:Images&gt;&#xd;
+					&lt;!--Zero or more repetitions:--&gt;&#xd;
+					&lt;ns:GlobalImage&gt;&#xd;
+						&lt;ns:Type&gt;?&lt;/ns:Type&gt;&#xd;
+						&lt;ns:AuthenticationID&gt;?&lt;/ns:AuthenticationID&gt;&#xd;
+					&lt;/ns:GlobalImage&gt;&#xd;
+				&lt;/ns:Images&gt;&#xd;
+				&lt;ns:Personal&gt;&#xd;
+					&lt;ns:PersonalDetails&gt;&#xd;
+						&lt;ns:Title&gt;Mr&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;Ima&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;Very&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;Smart&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;Male&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:DOBDay&gt;01&lt;/ns:DOBDay&gt;&#xd;
+						&lt;ns:DOBMonth&gt;04&lt;/ns:DOBMonth&gt;&#xd;
+						&lt;ns:DOBYear&gt;1990&lt;/ns:DOBYear&gt;&#xd;
+						&lt;ns:Birth&gt;&#xd;
+							&lt;ns:MothersMaidenName&gt;?&lt;/ns:MothersMaidenName&gt;&#xd;
+							&lt;ns:SurnameAtBirth&gt;?&lt;/ns:SurnameAtBirth&gt;&#xd;
+							&lt;ns:TownOfBirth&gt;?&lt;/ns:TownOfBirth&gt;&#xd;
+							&lt;ns:ProvinceOfBirth&gt;?&lt;/ns:ProvinceOfBirth&gt;&#xd;
+							&lt;ns:MunicipalityOfBirth&gt;?&lt;/ns:MunicipalityOfBirth&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;/ns:Birth&gt;&#xd;
+						&lt;ns:CountryOfBirth&gt;?&lt;/ns:CountryOfBirth&gt;&#xd;
+						&lt;ns:SecondSurname&gt;?&lt;/ns:SecondSurname&gt;&#xd;
+						&lt;ns:AdditionalMiddleNames&gt;&#xd;
+							&lt;!--Zero or more repetitions:--&gt;&#xd;
+							&lt;arr:string&gt;?&lt;/arr:string&gt;&#xd;
+						&lt;/ns:AdditionalMiddleNames&gt;&#xd;
+					&lt;/ns:PersonalDetails&gt;&#xd;
+					&lt;ns:AlternateName&gt;&#xd;
+						&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+						&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+						&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+						&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+						&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+						&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+						&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+					&lt;/ns:AlternateName&gt;&#xd;
+					&lt;ns:Aliases&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAlternateName&gt;&#xd;
+							&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+							&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+							&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+							&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+							&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+							&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+							&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+							&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+							&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+							&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+							&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+							&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+						&lt;/ns:GlobalAlternateName&gt;&#xd;
+					&lt;/ns:Aliases&gt;&#xd;
+				&lt;/ns:Personal&gt;&#xd;
+				&lt;ns:Addresses&gt;&#xd;
+					&lt;ns:CurrentAddress&gt;&#xd;
+						&lt;ns:Country&gt;United Kingdom&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;Buchan Drive Kingsway&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;GLOUCESTER&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;GL2 2EA&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;33&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:CurrentAddress&gt;&#xd;
+					&lt;ns:PreviousAddress1&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress1&gt;&#xd;
+					&lt;ns:PreviousAddress2&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress2&gt;&#xd;
+					&lt;ns:PreviousAddress3&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress3&gt;&#xd;
+					&lt;ns:HistoricAddresses&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAddress&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+							&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+							&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+							&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+							&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+							&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+							&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+							&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+							&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+							&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+							&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+							&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+							&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+							&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+							&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+							&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+							&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+							&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+							&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+							&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+							&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+							&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+							&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+							&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+							&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+							&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+							&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+							&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+							&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+						&lt;/ns:GlobalAddress&gt;&#xd;
+					&lt;/ns:HistoricAddresses&gt;&#xd;
+				&lt;/ns:Addresses&gt;&#xd;
+				&lt;ns:IdentityDocuments&gt;&#xd;
+					&lt;ns:China&gt;&#xd;
+						&lt;ns:ResidentIdentityCard&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:ResidentIdentityCard&gt;&#xd;
+					&lt;/ns:China&gt;&#xd;
+					&lt;ns:NewZealand&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+							&lt;ns:VehicleRegistration&gt;?&lt;/ns:VehicleRegistration&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:NewZealand&gt;&#xd;
+					&lt;ns:InternationalPassport&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+						&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+						&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+						&lt;ns:ShortPassportNumber&gt;?&lt;/ns:ShortPassportNumber&gt;&#xd;
+					&lt;/ns:InternationalPassport&gt;&#xd;
+					&lt;ns:EuropeanIdentityCard&gt;&#xd;
+						&lt;ns:Line1&gt;?&lt;/ns:Line1&gt;&#xd;
+						&lt;ns:Line2&gt;?&lt;/ns:Line2&gt;&#xd;
+						&lt;ns:Line3&gt;?&lt;/ns:Line3&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfNationality&gt;?&lt;/ns:CountryOfNationality&gt;&#xd;
+						&lt;ns:CountryOfIssue&gt;?&lt;/ns:CountryOfIssue&gt;&#xd;
+					&lt;/ns:EuropeanIdentityCard&gt;&#xd;
+					&lt;ns:UK&gt;&#xd;
+						&lt;ns:Passport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Passport&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+							&lt;ns:Microfiche&gt;?&lt;/ns:Microfiche&gt;&#xd;
+							&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+							&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+							&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+							&lt;ns:IssueNumber&gt;?&lt;/ns:IssueNumber&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+						&lt;ns:NationalInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:NationalInsuranceNumber&gt;&#xd;
+					&lt;/ns:UK&gt;&#xd;
+					&lt;ns:Australia&gt;&#xd;
+						&lt;ns:ShortPassport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;/ns:ShortPassport&gt;&#xd;
+						&lt;ns:Medicare&gt;&#xd;
+							&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+							&lt;ns:ReferenceNumber&gt;?&lt;/ns:ReferenceNumber&gt;&#xd;
+							&lt;ns:SurnameAtCitizenship&gt;?&lt;/ns:SurnameAtCitizenship&gt;&#xd;
+							&lt;ns:MiddleNameOnCard&gt;?&lt;/ns:MiddleNameOnCard&gt;&#xd;
+							&lt;ns:CardColour&gt;?&lt;/ns:CardColour&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Medicare&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:Australia&gt;&#xd;
+					&lt;ns:US&gt;&#xd;
+						&lt;ns:DrivingLicense&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicense&gt;&#xd;
+						&lt;ns:SocialSecurity&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialSecurity&gt;&#xd;
+					&lt;/ns:US&gt;&#xd;
+					&lt;ns:IdentityCard&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;/ns:IdentityCard&gt;&#xd;
+					&lt;ns:Canada&gt;&#xd;
+						&lt;ns:SocialInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialInsuranceNumber&gt;&#xd;
+					&lt;/ns:Canada&gt;&#xd;
+					&lt;ns:Mexico&gt;&#xd;
+						&lt;ns:TaxIdentificationNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIdentificationNumber&gt;&#xd;
+					&lt;/ns:Mexico&gt;&#xd;
+					&lt;ns:Brazil&gt;&#xd;
+						&lt;ns:CPFNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:CPFNumber&gt;&#xd;
+					&lt;/ns:Brazil&gt;&#xd;
+					&lt;ns:Spain&gt;&#xd;
+						&lt;ns:TaxIDNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIDNumber&gt;&#xd;
+					&lt;/ns:Spain&gt;&#xd;
+				&lt;/ns:IdentityDocuments&gt;&#xd;
+				&lt;ns:AddressDocuments&gt;&#xd;
+					&lt;ns:UKAddressDocuments&gt;&#xd;
+						&lt;ns:ElectricitySupplier&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+						&lt;/ns:ElectricitySupplier&gt;&#xd;
+					&lt;/ns:UKAddressDocuments&gt;&#xd;
+				&lt;/ns:AddressDocuments&gt;&#xd;
+				&lt;ns:ContactDetails&gt;&#xd;
+					&lt;ns:LandTelephone&gt;&#xd;
+						&lt;ns:ExDirectory&gt;?&lt;/ns:ExDirectory&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:LandTelephone&gt;&#xd;
+					&lt;ns:MobileTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:MobileTelephone&gt;&#xd;
+					&lt;ns:Email&gt;?&lt;/ns:Email&gt;&#xd;
+					&lt;ns:WorkTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:WorkTelephone&gt;&#xd;
+				&lt;/ns:ContactDetails&gt;&#xd;
+				&lt;ns:Employment&gt;&#xd;
+					&lt;ns:ResidenceType&gt;?&lt;/ns:ResidenceType&gt;&#xd;
+					&lt;ns:EmploymentStatus&gt;?&lt;/ns:EmploymentStatus&gt;&#xd;
+					&lt;ns:CurrentTime&gt;?&lt;/ns:CurrentTime&gt;&#xd;
+				&lt;/ns:Employment&gt;&#xd;
+				&lt;ns:BankingDetails&gt;&#xd;
+					&lt;ns:BankAccount&gt;&#xd;
+						&lt;ns:SortCode&gt;?&lt;/ns:SortCode&gt;&#xd;
+						&lt;ns:AccountNumber&gt;?&lt;/ns:AccountNumber&gt;&#xd;
+					&lt;/ns:BankAccount&gt;&#xd;
+					&lt;ns:CreditDebitCard&gt;&#xd;
+						&lt;ns:CardHolderName&gt;?&lt;/ns:CardHolderName&gt;&#xd;
+						&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:StartMonth&gt;?&lt;/ns:StartMonth&gt;&#xd;
+						&lt;ns:StartYear&gt;?&lt;/ns:StartYear&gt;&#xd;
+						&lt;ns:CardIssueNumber&gt;?&lt;/ns:CardIssueNumber&gt;&#xd;
+						&lt;ns:CardType&gt;?&lt;/ns:CardType&gt;&#xd;
+						&lt;ns:CardVerificationCode&gt;?&lt;/ns:CardVerificationCode&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;ns:MerchantData&gt;?&lt;/ns:MerchantData&gt;&#xd;
+						&lt;ns:ThreeDSecureResponse&gt;?&lt;/ns:ThreeDSecureResponse&gt;&#xd;
+					&lt;/ns:CreditDebitCard&gt;&#xd;
+				&lt;/ns:BankingDetails&gt;&#xd;
+				&lt;ns:GlobalGeneric&gt;&#xd;
+					&lt;ns:Generic1&gt;?&lt;/ns:Generic1&gt;&#xd;
+					&lt;ns:Generic2&gt;?&lt;/ns:Generic2&gt;&#xd;
+					&lt;ns:Generic3&gt;?&lt;/ns:Generic3&gt;&#xd;
+					&lt;ns:Generic4&gt;?&lt;/ns:Generic4&gt;&#xd;
+					&lt;ns:Generic5&gt;?&lt;/ns:Generic5&gt;&#xd;
+					&lt;ns:Generic6&gt;?&lt;/ns:Generic6&gt;&#xd;
+					&lt;ns:Generic7&gt;?&lt;/ns:Generic7&gt;&#xd;
+					&lt;ns:Generic8&gt;?&lt;/ns:Generic8&gt;&#xd;
+					&lt;ns:Generic9&gt;?&lt;/ns:Generic9&gt;&#xd;
+					&lt;ns:Generic10&gt;?&lt;/ns:Generic10&gt;&#xd;
+					&lt;ns:Generic11&gt;?&lt;/ns:Generic11&gt;&#xd;
+					&lt;ns:Generic12&gt;?&lt;/ns:Generic12&gt;&#xd;
+					&lt;ns:Generic13&gt;?&lt;/ns:Generic13&gt;&#xd;
+					&lt;ns:Generic14&gt;?&lt;/ns:Generic14&gt;&#xd;
+					&lt;ns:Generic15&gt;?&lt;/ns:Generic15&gt;&#xd;
+					&lt;ns:Generic16&gt;?&lt;/ns:Generic16&gt;&#xd;
+					&lt;ns:Generic17&gt;?&lt;/ns:Generic17&gt;&#xd;
+					&lt;ns:Generic18&gt;?&lt;/ns:Generic18&gt;&#xd;
+					&lt;ns:Generic19&gt;?&lt;/ns:Generic19&gt;&#xd;
+					&lt;ns:Generic20&gt;?&lt;/ns:Generic20&gt;&#xd;
+				&lt;/ns:GlobalGeneric&gt;&#xd;
+				&lt;ns:Location&gt;&#xd;
+					&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+					&lt;ns:BlackBoxID&gt;?&lt;/ns:BlackBoxID&gt;&#xd;
+					&lt;ns:IndividualID&gt;?&lt;/ns:IndividualID&gt;&#xd;
+					&lt;ns:AcceptHeaders&gt;?&lt;/ns:AcceptHeaders&gt;&#xd;
+					&lt;ns:UserAgent&gt;?&lt;/ns:UserAgent&gt;&#xd;
+					&lt;ns:IPAddress&gt;?&lt;/ns:IPAddress&gt;&#xd;
+				&lt;/ns:Location&gt;&#xd;
+				&lt;ns:Consent&gt;&#xd;
+					&lt;ns:UKDriverConsent&gt;?&lt;/ns:UKDriverConsent&gt;&#xd;
+				&lt;/ns:Consent&gt;&#xd;
+			&lt;/ns:InputData&gt;&#xd;
+		&lt;/ns:AuthenticateSP&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">8081</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">	</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ns=&quot;http://www.id3global.com/ID3gWS/2013/04&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;&#xd;
+	&lt;soapenv:Header/&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;ns:AuthenticateSP&gt;&#xd;
+			&lt;ns:ProfileIDVersion&gt;&#xd;
+				&lt;ns:ID&gt;a0f29d6f-2cb6-4009-b1bd-6c9c876ca70b&lt;/ns:ID&gt;&#xd;
+				&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+			&lt;/ns:ProfileIDVersion&gt;&#xd;
+			&lt;ns:CustomerReference&gt;amltest007&lt;/ns:CustomerReference&gt;&#xd;
+			&lt;ns:InputData&gt;&#xd;
+				&lt;ns:Images&gt;&#xd;
+					&lt;!--Zero or more repetitions:--&gt;&#xd;
+					&lt;ns:GlobalImage&gt;&#xd;
+						&lt;ns:Type&gt;?&lt;/ns:Type&gt;&#xd;
+						&lt;ns:AuthenticationID&gt;?&lt;/ns:AuthenticationID&gt;&#xd;
+					&lt;/ns:GlobalImage&gt;&#xd;
+				&lt;/ns:Images&gt;&#xd;
+				&lt;ns:Personal&gt;&#xd;
+					&lt;ns:PersonalDetails&gt;&#xd;
+						&lt;ns:Title&gt;Mr&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;Ima&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;Very&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;Smart&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;Male&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:DOBDay&gt;01&lt;/ns:DOBDay&gt;&#xd;
+						&lt;ns:DOBMonth&gt;04&lt;/ns:DOBMonth&gt;&#xd;
+						&lt;ns:DOBYear&gt;1990&lt;/ns:DOBYear&gt;&#xd;
+						&lt;ns:Birth&gt;&#xd;
+							&lt;ns:MothersMaidenName&gt;?&lt;/ns:MothersMaidenName&gt;&#xd;
+							&lt;ns:SurnameAtBirth&gt;?&lt;/ns:SurnameAtBirth&gt;&#xd;
+							&lt;ns:TownOfBirth&gt;?&lt;/ns:TownOfBirth&gt;&#xd;
+							&lt;ns:ProvinceOfBirth&gt;?&lt;/ns:ProvinceOfBirth&gt;&#xd;
+							&lt;ns:MunicipalityOfBirth&gt;?&lt;/ns:MunicipalityOfBirth&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;/ns:Birth&gt;&#xd;
+						&lt;ns:CountryOfBirth&gt;?&lt;/ns:CountryOfBirth&gt;&#xd;
+						&lt;ns:SecondSurname&gt;?&lt;/ns:SecondSurname&gt;&#xd;
+						&lt;ns:AdditionalMiddleNames&gt;&#xd;
+							&lt;!--Zero or more repetitions:--&gt;&#xd;
+							&lt;arr:string&gt;?&lt;/arr:string&gt;&#xd;
+						&lt;/ns:AdditionalMiddleNames&gt;&#xd;
+					&lt;/ns:PersonalDetails&gt;&#xd;
+					&lt;ns:AlternateName&gt;&#xd;
+						&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+						&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+						&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+						&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+						&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+						&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+						&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+					&lt;/ns:AlternateName&gt;&#xd;
+					&lt;ns:Aliases&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAlternateName&gt;&#xd;
+							&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+							&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+							&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+							&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+							&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+							&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+							&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+							&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+							&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+							&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+							&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+							&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+						&lt;/ns:GlobalAlternateName&gt;&#xd;
+					&lt;/ns:Aliases&gt;&#xd;
+				&lt;/ns:Personal&gt;&#xd;
+				&lt;ns:Addresses&gt;&#xd;
+					&lt;ns:CurrentAddress&gt;&#xd;
+						&lt;ns:Country&gt;United Kingdom&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;Buchan Drive Kingsway&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;GLOUCESTER&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;GL2 2EA&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;33&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:CurrentAddress&gt;&#xd;
+					&lt;ns:PreviousAddress1&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress1&gt;&#xd;
+					&lt;ns:PreviousAddress2&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress2&gt;&#xd;
+					&lt;ns:PreviousAddress3&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress3&gt;&#xd;
+					&lt;ns:HistoricAddresses&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAddress&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+							&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+							&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+							&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+							&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+							&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+							&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+							&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+							&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+							&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+							&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+							&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+							&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+							&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+							&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+							&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+							&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+							&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+							&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+							&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+							&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+							&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+							&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+							&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+							&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+							&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+							&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+							&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+							&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+						&lt;/ns:GlobalAddress&gt;&#xd;
+					&lt;/ns:HistoricAddresses&gt;&#xd;
+				&lt;/ns:Addresses&gt;&#xd;
+				&lt;ns:IdentityDocuments&gt;&#xd;
+					&lt;ns:China&gt;&#xd;
+						&lt;ns:ResidentIdentityCard&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:ResidentIdentityCard&gt;&#xd;
+					&lt;/ns:China&gt;&#xd;
+					&lt;ns:NewZealand&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+							&lt;ns:VehicleRegistration&gt;?&lt;/ns:VehicleRegistration&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:NewZealand&gt;&#xd;
+					&lt;ns:InternationalPassport&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+						&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+						&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+						&lt;ns:ShortPassportNumber&gt;?&lt;/ns:ShortPassportNumber&gt;&#xd;
+					&lt;/ns:InternationalPassport&gt;&#xd;
+					&lt;ns:EuropeanIdentityCard&gt;&#xd;
+						&lt;ns:Line1&gt;?&lt;/ns:Line1&gt;&#xd;
+						&lt;ns:Line2&gt;?&lt;/ns:Line2&gt;&#xd;
+						&lt;ns:Line3&gt;?&lt;/ns:Line3&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfNationality&gt;?&lt;/ns:CountryOfNationality&gt;&#xd;
+						&lt;ns:CountryOfIssue&gt;?&lt;/ns:CountryOfIssue&gt;&#xd;
+					&lt;/ns:EuropeanIdentityCard&gt;&#xd;
+					&lt;ns:UK&gt;&#xd;
+						&lt;ns:Passport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Passport&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+							&lt;ns:Microfiche&gt;?&lt;/ns:Microfiche&gt;&#xd;
+							&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+							&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+							&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+							&lt;ns:IssueNumber&gt;?&lt;/ns:IssueNumber&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+						&lt;ns:NationalInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:NationalInsuranceNumber&gt;&#xd;
+					&lt;/ns:UK&gt;&#xd;
+					&lt;ns:Australia&gt;&#xd;
+						&lt;ns:ShortPassport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;/ns:ShortPassport&gt;&#xd;
+						&lt;ns:Medicare&gt;&#xd;
+							&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+							&lt;ns:ReferenceNumber&gt;?&lt;/ns:ReferenceNumber&gt;&#xd;
+							&lt;ns:SurnameAtCitizenship&gt;?&lt;/ns:SurnameAtCitizenship&gt;&#xd;
+							&lt;ns:MiddleNameOnCard&gt;?&lt;/ns:MiddleNameOnCard&gt;&#xd;
+							&lt;ns:CardColour&gt;?&lt;/ns:CardColour&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Medicare&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:Australia&gt;&#xd;
+					&lt;ns:US&gt;&#xd;
+						&lt;ns:DrivingLicense&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicense&gt;&#xd;
+						&lt;ns:SocialSecurity&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialSecurity&gt;&#xd;
+					&lt;/ns:US&gt;&#xd;
+					&lt;ns:IdentityCard&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;/ns:IdentityCard&gt;&#xd;
+					&lt;ns:Canada&gt;&#xd;
+						&lt;ns:SocialInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialInsuranceNumber&gt;&#xd;
+					&lt;/ns:Canada&gt;&#xd;
+					&lt;ns:Mexico&gt;&#xd;
+						&lt;ns:TaxIdentificationNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIdentificationNumber&gt;&#xd;
+					&lt;/ns:Mexico&gt;&#xd;
+					&lt;ns:Brazil&gt;&#xd;
+						&lt;ns:CPFNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:CPFNumber&gt;&#xd;
+					&lt;/ns:Brazil&gt;&#xd;
+					&lt;ns:Spain&gt;&#xd;
+						&lt;ns:TaxIDNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIDNumber&gt;&#xd;
+					&lt;/ns:Spain&gt;&#xd;
+				&lt;/ns:IdentityDocuments&gt;&#xd;
+				&lt;ns:AddressDocuments&gt;&#xd;
+					&lt;ns:UKAddressDocuments&gt;&#xd;
+						&lt;ns:ElectricitySupplier&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+						&lt;/ns:ElectricitySupplier&gt;&#xd;
+					&lt;/ns:UKAddressDocuments&gt;&#xd;
+				&lt;/ns:AddressDocuments&gt;&#xd;
+				&lt;ns:ContactDetails&gt;&#xd;
+					&lt;ns:LandTelephone&gt;&#xd;
+						&lt;ns:ExDirectory&gt;?&lt;/ns:ExDirectory&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:LandTelephone&gt;&#xd;
+					&lt;ns:MobileTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:MobileTelephone&gt;&#xd;
+					&lt;ns:Email&gt;?&lt;/ns:Email&gt;&#xd;
+					&lt;ns:WorkTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:WorkTelephone&gt;&#xd;
+				&lt;/ns:ContactDetails&gt;&#xd;
+				&lt;ns:Employment&gt;&#xd;
+					&lt;ns:ResidenceType&gt;?&lt;/ns:ResidenceType&gt;&#xd;
+					&lt;ns:EmploymentStatus&gt;?&lt;/ns:EmploymentStatus&gt;&#xd;
+					&lt;ns:CurrentTime&gt;?&lt;/ns:CurrentTime&gt;&#xd;
+				&lt;/ns:Employment&gt;&#xd;
+				&lt;ns:BankingDetails&gt;&#xd;
+					&lt;ns:BankAccount&gt;&#xd;
+						&lt;ns:SortCode&gt;?&lt;/ns:SortCode&gt;&#xd;
+						&lt;ns:AccountNumber&gt;?&lt;/ns:AccountNumber&gt;&#xd;
+					&lt;/ns:BankAccount&gt;&#xd;
+					&lt;ns:CreditDebitCard&gt;&#xd;
+						&lt;ns:CardHolderName&gt;?&lt;/ns:CardHolderName&gt;&#xd;
+						&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:StartMonth&gt;?&lt;/ns:StartMonth&gt;&#xd;
+						&lt;ns:StartYear&gt;?&lt;/ns:StartYear&gt;&#xd;
+						&lt;ns:CardIssueNumber&gt;?&lt;/ns:CardIssueNumber&gt;&#xd;
+						&lt;ns:CardType&gt;?&lt;/ns:CardType&gt;&#xd;
+						&lt;ns:CardVerificationCode&gt;?&lt;/ns:CardVerificationCode&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;ns:MerchantData&gt;?&lt;/ns:MerchantData&gt;&#xd;
+						&lt;ns:ThreeDSecureResponse&gt;?&lt;/ns:ThreeDSecureResponse&gt;&#xd;
+					&lt;/ns:CreditDebitCard&gt;&#xd;
+				&lt;/ns:BankingDetails&gt;&#xd;
+				&lt;ns:GlobalGeneric&gt;&#xd;
+					&lt;ns:Generic1&gt;?&lt;/ns:Generic1&gt;&#xd;
+					&lt;ns:Generic2&gt;?&lt;/ns:Generic2&gt;&#xd;
+					&lt;ns:Generic3&gt;?&lt;/ns:Generic3&gt;&#xd;
+					&lt;ns:Generic4&gt;?&lt;/ns:Generic4&gt;&#xd;
+					&lt;ns:Generic5&gt;?&lt;/ns:Generic5&gt;&#xd;
+					&lt;ns:Generic6&gt;?&lt;/ns:Generic6&gt;&#xd;
+					&lt;ns:Generic7&gt;?&lt;/ns:Generic7&gt;&#xd;
+					&lt;ns:Generic8&gt;?&lt;/ns:Generic8&gt;&#xd;
+					&lt;ns:Generic9&gt;?&lt;/ns:Generic9&gt;&#xd;
+					&lt;ns:Generic10&gt;?&lt;/ns:Generic10&gt;&#xd;
+					&lt;ns:Generic11&gt;?&lt;/ns:Generic11&gt;&#xd;
+					&lt;ns:Generic12&gt;?&lt;/ns:Generic12&gt;&#xd;
+					&lt;ns:Generic13&gt;?&lt;/ns:Generic13&gt;&#xd;
+					&lt;ns:Generic14&gt;?&lt;/ns:Generic14&gt;&#xd;
+					&lt;ns:Generic15&gt;?&lt;/ns:Generic15&gt;&#xd;
+					&lt;ns:Generic16&gt;?&lt;/ns:Generic16&gt;&#xd;
+					&lt;ns:Generic17&gt;?&lt;/ns:Generic17&gt;&#xd;
+					&lt;ns:Generic18&gt;?&lt;/ns:Generic18&gt;&#xd;
+					&lt;ns:Generic19&gt;?&lt;/ns:Generic19&gt;&#xd;
+					&lt;ns:Generic20&gt;?&lt;/ns:Generic20&gt;&#xd;
+				&lt;/ns:GlobalGeneric&gt;&#xd;
+				&lt;ns:Location&gt;&#xd;
+					&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+					&lt;ns:BlackBoxID&gt;?&lt;/ns:BlackBoxID&gt;&#xd;
+					&lt;ns:IndividualID&gt;?&lt;/ns:IndividualID&gt;&#xd;
+					&lt;ns:AcceptHeaders&gt;?&lt;/ns:AcceptHeaders&gt;&#xd;
+					&lt;ns:UserAgent&gt;?&lt;/ns:UserAgent&gt;&#xd;
+					&lt;ns:IPAddress&gt;?&lt;/ns:IPAddress&gt;&#xd;
+				&lt;/ns:Location&gt;&#xd;
+				&lt;ns:Consent&gt;&#xd;
+					&lt;ns:UKDriverConsent&gt;?&lt;/ns:UKDriverConsent&gt;&#xd;
+				&lt;/ns:Consent&gt;&#xd;
+			&lt;/ns:InputData&gt;&#xd;
+		&lt;/ns:AuthenticateSP&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">8081</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">	</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry WIN" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: 77,&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: 123456789,&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: true,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: true&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;WIN&quot;,&#xd;
+      &quot;stake&quot;: &quot;${stake}&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+        {&#xd;
+          &quot;type&quot;: &quot;WIN&quot;,&#xd;
+          &quot;propositionId&quot;: ${propNumber},&#xd;
+          &quot;odds&quot;: &quot;${odds}&quot;&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry WIN - device 99" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: 99,&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: 987654321,&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: true,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: true&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;WIN&quot;,&#xd;
+      &quot;stake&quot;: &quot;${stake}&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+        {&#xd;
+          &quot;type&quot;: &quot;WIN&quot;,&#xd;
+          &quot;propositionId&quot;: ${propNumber},&#xd;
+          &quot;odds&quot;: &quot;${odds}&quot;&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry PLACE" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: true,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: true&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;PLACE&quot;,&#xd;
+      &quot;stake&quot;: &quot;${stake}&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+        {&#xd;
+          &quot;type&quot;: &quot;PLACE&quot;,&#xd;
+          &quot;propositionId&quot;: ${propNumber},&#xd;
+          &quot;odds&quot;: &quot;${odds}&quot;&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry EACH_WAY" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: true,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: true&#xd;
+    }&#xd;
+  },&#xd;
+ &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;FIXED_ODDS&quot;,&#xd;
+      &quot;stake&quot;: &quot;${stake}&quot;,&#xd;
+      &quot;secondaryStake&quot;: &quot;{stake}&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+        {&#xd;
+          &quot;type&quot;: &quot;EACH_WAY&quot;,&#xd;
+          &quot;propositionId&quot;: ${propNumber},&#xd;
+          &quot;odds&quot;: &quot;${odds}&quot;,&#xd;
+          &quot;secondaryOdds&quot;: &quot;${placeOdds}&quot;&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry MULTI" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: true,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: true&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;FIXED_ODDS&quot;,&#xd;
+      &quot;stake&quot;: &quot;1.00&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+       ${multiLegs}&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry BUNDLE" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: ${deviceType},&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;,&#xd;
+    &quot;preferences&quot;: {&#xd;
+      &quot;acceptCounterOfferOnAmount&quot;: true,&#xd;
+      &quot;acceptCounterOfferOnPrice&quot;: false,&#xd;
+      &quot;acceptCurrentOddsAtReducedPrice&quot;: true&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;bets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;FIXED_ODDS&quot;,&#xd;
+      &quot;stake&quot;: &quot;1.00&quot;,&#xd;
+      &quot;propositions&quot;: [&#xd;
+       ${bundleBetMessage}&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03 cashout REQUEST" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: &quot;${deviceType}&quot;,&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;&#xd;
+},&#xd;
+&quot;functionCode&quot;: &quot;REQUEST&quot;,&#xd;
+&quot;cashouts&quot;: [&#xd;
+    {&#xd;
+      &quot;percentage&quot;: &quot;10000&quot;,&#xd;
+      &quot;ticketSerialNumber&quot;: &quot;${ticketSerialNumber}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;percentage&quot;: &quot;10000&quot;,&#xd;
+      &quot;ticketSerialNumber&quot;: &quot;${ticketSerialNumber}&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/cashout</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03 cashout OFFER" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: &quot;${deviceType}&quot;,&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;&#xd;
+},&#xd;
+&quot;functionCode&quot;: &quot;OFFER&quot;,&#xd;
+&quot;cashouts&quot;: [&#xd;
+    {&#xd;
+      &quot;percentage&quot;: &quot;10000&quot;,&#xd;
+      &quot;ticketSerialNumber&quot;: &quot;${ticketSerialNumber}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;percentage&quot;: &quot;10000&quot;,&#xd;
+      &quot;ticketSerialNumber&quot;: &quot;${ticketSerialNumber}&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/cashout</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03 cashout RETRIEVE" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: &quot;${deviceType}&quot;,&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;&#xd;
+},&#xd;
+&quot;functionCode&quot;: &quot;RETRIEVE&quot;,&#xd;
+&quot;cashouts&quot;: [&#xd;
+    {&#xd;
+      &quot;percentage&quot;: &quot;10000&quot;,&#xd;
+      &quot;ticketSerialNumber&quot;: &quot;${ticketSerialNumber}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;percentage&quot;: &quot;10000&quot;,&#xd;
+      &quot;ticketSerialNumber&quot;: &quot;${ticketSerialNumber}&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/cashout</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03 cashout ACCEPT" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: &quot;${deviceType}&quot;,&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;&#xd;
+},&#xd;
+&quot;functionCode&quot;: &quot;ACCEPT&quot;,&#xd;
+&quot;cashouts&quot;: [&#xd;
+    {&#xd;
+      &quot;percentage&quot;: &quot;5000&quot;,&#xd;
+      &quot;ticketSerialNumber&quot;: &quot;${ticketSerialNumber}&quot;,&#xd;
+      &quot;offerAmount&quot;: &quot;${offerAmount}&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/cashout</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="04 cancel" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;deviceId&quot;: &quot;${deviceId}&quot;,&#xd;
+&quot;deviceType&quot;: &quot;${deviceType}&quot;,&#xd;
+&quot;accountDetails&quot;: {&#xd;
+    &quot;accountNumber&quot;: ${accountNumber},&#xd;
+    &quot;password&quot;: &quot;${accountPassword}&quot;,&#xd;
+    &quot;channel&quot;: &quot;${channel}&quot;&#xd;
+	},&#xd;
+&quot;cancelBets&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;FIXED_ODDS&quot;,&#xd;
+      &quot;ticketSerialNumber&quot;: &quot;${ticketSerialNumber}&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">CTG/services/cancelbet</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="CAM_Login" enabled="false">
+          <stringProp name="TCPSampler.classname">org.apache.jmeter.protocol.tcp.sampler.BinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">${SVE_IP}</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">20000</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout"></stringProp>
+          <stringProp name="TCPSampler.request">5400000000000000202d31d101000f330000000b34303032303030303033320c68107431000000470d000000bee2040000000000203131376166326634643538313862316462316132313061363330326131613732010101</stringProp>
+          <boolProp name="TCPSampler.closeConnection">false</boolProp>
+          <stringProp name="TCPSampler.EolByte">\n</stringProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="CAM_Statements" enabled="false">
+          <stringProp name="TCPSampler.classname">org.apache.jmeter.protocol.tcp.sampler.BinaryTCPClientImpl</stringProp>
+          <stringProp name="TCPSampler.server">${SVE_IP}</stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port">20000</stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout"></stringProp>
+          <stringProp name="TCPSampler.request">6f00000000000000202d31d101000f330000000b34303032303030303033320c6810744c000000560d00000041381a00203131376166326634643538313862316462316132313061363330326131613732030280d0ab005a030000ffca01a55d03000001000000000000000013000000000000</stringProp>
+          <boolProp name="TCPSampler.closeConnection">false</boolProp>
+          <stringProp name="TCPSampler.EolByte">\n</stringProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

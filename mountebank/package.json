@@ -1,0 +1,84 @@
+{
+  "name": "mountebank",
+  "preferGlobal": true,
+  "version": "1.6.0",
+  "author": "Brandon Byars <brandon.byars@gmail.com>",
+  "contributors": [
+    "Jason Reid <jason@jasonreid.com>",
+    "James Thomas",
+    "Nikos Baxevanis",
+    "Andrew Dean",
+    "Cannon Biggs",
+    "Robert Zakrzewski",
+    "Alex Nishikawa",
+    "Scott Robinson <scott@quadhome.com>",
+    "Paul Phillips <paul.phillips@thoughtworks.com>",
+    "Manoj <manojlds@gmail.com>",
+    "Andrew Hadley <andhadley@gmail.com>",
+    "Carson Ramsdem <cramsden@hmc.edu>",
+    "Avalon McRae",
+    "Burkhard Reffeling",
+    "Shubheksha Jalan",
+    "Tim Brown <Tpbrown@gmail.com>",
+    "Matthew Herman <mdewaddict11@gmail.com>",
+    "Jonathan Wilson <jonathan.wilson@sjrb.ca>",
+    "Ryan Boucher <ryan.boucher@distributedlife.com>",
+    "Nathan Jenan <njenan@gmail.com>",
+    "Tomas Bezdek <tbezdek@gumtree.com>",
+    "Vince Maiuri <RookY2K@gmail.com>",
+    "Andrew <sunfreakz@gmail.com>"
+  ],
+  "description": "Over the wire test doubles",
+  "homepage": "http://www.mbtest.org",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbyars/mountebank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bbyars/mountebank/issues",
+    "email": "brandon.byars@gmail.com"
+  },
+  "bin": {
+    "mb": "./bin/mb"
+  },
+  "main": "./src/mountebank.js",
+  "scripts": {
+    "start": "bin/mb",
+    "restart": "bin/mb restart",
+    "stop": "bin/mb stop"
+  },
+  "keywords": [
+    "test",
+    "stub",
+    "mock",
+    "double",
+    "smtp",
+    "email",
+    "http",
+    "https",
+    "tcp",
+    "net",
+    "service virtualization"
+  ],
+  "dependencies": {
+    "cors": "~2.7.1",
+    "ejs": "~2.5.1",
+    "errorhandler": "^1.0.0",
+    "express": "~4.14.0",
+    "json-stable-stringify": "~1.0.0",
+    "jsonpath-plus": "^0.15.0",
+    "mailparser": "~0.6.1",
+    "q": "~1.4.1",
+    "simplesmtp": "~0.3.16",
+    "soap": "^0.16.0",
+    "winston": "~2.2.0",
+    "xml2js": "^0.4.4",
+    "xmldom": "^0.1.19",
+    "xpath": "0.0.23",
+    "yargs": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}

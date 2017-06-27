@@ -1,0 +1,1 @@
+C:\_git\perf_vse_gbg\mb.cmd --configfile C:\_git\perf_vse_gbg\imposters.ejs --allowInjection --logfile c:\var\logs\mb_gbg.log 

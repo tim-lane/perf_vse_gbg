@@ -1,0 +1,145 @@
+function (request, state, logger) {
+    var today = new Date();
+
+var parseString = require('xml2js').parseString;
+
+var xml = request.body;
+
+
+	parseString(xml, function (err, result));
+	var request_body = JSON.parse(JSON.stringify(result));
+
+	logger.info('Authenticate SP -----------------------------------------------');
+	logger.info('ID is: ' + ID);
+	logger.info('Authenticate SP -----------------------------------------------');
+	
+			
+	// Fixed Odds single bet
+	logger.info('Authenticate SP');
+	
+		
+	return {
+			headers: {
+				'Content-Type': 'application/json',
+				'Connection': 'Keep-Alive'
+			},
+			body: {
+			
+			<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ns="http://www.id3global.com/ID3gWS/2013/04">
+   <soap:Header/>
+   <soap:Body>
+      <ns:AuthenticateSPResponse>
+         <!--Optional:-->
+         <ns:AuthenticateSPResult>
+            <!--Optional:-->
+            <ns:AuthenticationID>ID</ns:AuthenticationID>
+            <!--Optional:-->
+            <ns:Timestamp>?</ns:Timestamp>
+            <!--Optional:-->
+            <ns:CustomerRef>CustomerReference</ns:CustomerRef>
+            <!--Optional:-->
+            <ns:ProfileID>?</ns:ProfileID>
+            <!--Optional:-->
+            <ns:ProfileName>?</ns:ProfileName>
+            <!--Optional:-->
+            <ns:ProfileVersion>?</ns:ProfileVersion>
+            <!--Optional:-->
+            <ns:ProfileRevision>?</ns:ProfileRevision>
+            <!--Optional:-->
+            <ns:ProfileState>?</ns:ProfileState>
+            <!--Optional:-->
+            <ns:ResultCodes>
+               <!--Zero or more repetitions:-->
+               <ns:GlobalItemCheckResultCodes>
+                  <!--Optional:-->
+                  <ns:Name>?</ns:Name>
+                  <!--Optional:-->
+                  <ns:Description>?</ns:Description>
+                  <!--Optional:-->
+                  <ns:Comment>
+                     <!--Zero or more repetitions:-->
+                     <ns:GlobalItemCheckResultCode>
+                        <!--Optional:-->
+                        <ns:Description>?</ns:Description>
+                        <!--Optional:-->
+                        <ns:Code>?</ns:Code>
+                        <!--Optional:-->
+                        <ns:Override>?</ns:Override>
+                     </ns:GlobalItemCheckResultCode>
+                  </ns:Comment>
+                  <!--Optional:-->
+                  <ns:Match>
+                     <!--Zero or more repetitions:-->
+                     <ns:GlobalItemCheckResultCode>
+                        <!--Optional:-->
+                        <ns:Description>?</ns:Description>
+                        <!--Optional:-->
+                        <ns:Code>?</ns:Code>
+                        <!--Optional:-->
+                        <ns:Override>?</ns:Override>
+                     </ns:GlobalItemCheckResultCode>
+                  </ns:Match>
+                  <!--Optional:-->
+                  <ns:Warning>
+                     <!--Zero or more repetitions:-->
+                     <ns:GlobalItemCheckResultCode>
+                        <!--Optional:-->
+                        <ns:Description>?</ns:Description>
+                        <!--Optional:-->
+                        <ns:Code>?</ns:Code>
+                        <!--Optional:-->
+                        <ns:Override>?</ns:Override>
+                     </ns:GlobalItemCheckResultCode>
+                  </ns:Warning>
+                  <!--Optional:-->
+                  <ns:Mismatch>
+                     <!--Zero or more repetitions:-->
+                     <ns:GlobalItemCheckResultCode>
+                        <!--Optional:-->
+                        <ns:Description>?</ns:Description>
+                        <!--Optional:-->
+                        <ns:Code>?</ns:Code>
+                        <!--Optional:-->
+                        <ns:Override>?</ns:Override>
+                     </ns:GlobalItemCheckResultCode>
+                  </ns:Mismatch>
+                  <!--Optional:-->
+                  <ns:ID>?</ns:ID>
+                  <!--Optional:-->
+                  <ns:Pass>?</ns:Pass>
+                  <!--Optional:-->
+                  <ns:Address>?</ns:Address>
+                  <!--Optional:-->
+                  <ns:Forename>?</ns:Forename>
+                  <!--Optional:-->
+                  <ns:Surname>?</ns:Surname>
+                  <!--Optional:-->
+                  <ns:DOB>?</ns:DOB>
+                  <!--Optional:-->
+                  <ns:Alert>?</ns:Alert>
+                  <!--Optional:-->
+                  <ns:Country>?</ns:Country>
+               </ns:GlobalItemCheckResultCodes>
+            </ns:ResultCodes>
+            <!--Optional:-->
+            <ns:Score>?</ns:Score>
+            <!--Optional:-->
+            <ns:BandText>?</ns:BandText>
+            <!--Optional:-->
+            <ns:UserBreakpoint>?</ns:UserBreakpoint>
+            <!--Optional:-->
+            <ns:NoRetry>?</ns:NoRetry>
+            <!--Optional:-->
+            <ns:ChainID>?</ns:ChainID>
+            <!--Optional:-->
+            <ns:Country>?</ns:Country>
+         </ns:AuthenticateSPResult>
+      </ns:AuthenticateSPResponse>
+   </soap:Body>
+</soap:Envelope>
+
+			}
+					
+		};		
+	
+}

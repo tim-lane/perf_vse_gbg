@@ -1,0 +1,25 @@
+<%# -------------------------------------------------------------------- %>
+<%# imposters.ejs - Based on the path of the request, this will redirect %>
+<%#                 to the appropriate stub file to craft the respone.   %>
+<%# -------------------------------------------------------------------- %>
+
+
+<%# -------------------------------------------------------------------- %>
+<%# GBG response                                              %>
+<%# -------------------------------------------------------------------- %>	
+	{
+		"responses": 
+		[
+			{
+				"inject": "<%- stringify(filename, 'gbg/authenticateSP.ejs') %>"
+			}
+		],
+	
+		"predicates": 
+		[
+			{ 
+				"contains": { "body": "AuthenticateSP" } 
+			}
+		] 
+	}
+

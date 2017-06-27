@@ -1,0 +1,57 @@
+<%
+title = 'FAQs'
+description = 'Frequently asked questions about using mountebank'
+%>
+
+<% include _header %>
+
+      <h1>Frequently Asked Questions</h1>
+
+      <dl>
+        <dt>How do you pronounce mountebank?</dt>
+        <dd>mountebank pronounces it with a plain and unpretentious accent,
+        reflecting his humble roots as a man of the people.</dd>
+
+        <dt>How can I post-process a response, for example, to add a custom header to
+          a proxied response or add a current timestamp into the response</dt>
+        <dd>See the <a href='/docs/api/behaviors'><code>decorate</code> behavior</a>.</dd>
+
+        <dt>How can I optimize the number of API calls during test setup and teardown?</dt>
+        <dd>You can use the <a href='/docs/api/overview#put-imposters'>PUT /imposters</a> API
+        call to combine cleanup of the previous test run's imposters and setup of the new
+        test run.  If you need to do mock verification, the <a href='/docs/api/overview#delete-imposter'>
+        DELETE /imposter</a> call will return the <code>requests</code> array.</dd>
+
+        <dt>Why is the command line application simply called <code>mb</code>?</dt>
+        <dd>Because <code>mb</code> is easier to pronounce than mountebank.</dd>
+
+        <dt>How can I split my imposters into multiple files and have them automatically
+        loaded when <code>mb</code> restarts?</dt>
+        <dd>See the <a href='/docs/commandLine#config-file'><code>--configfile</code> command line option</a>
+        It can either be a single file containing the JSON that you get back when you call
+        <a href='/docs/api/overview#get-imposters'><code>GET /imposters?replayable=true</code></a>
+        or multiple files that will be collected via templating.</dd>
+
+        <dt>How can I change imposters once I've created them?</dt>
+        <dd>You can't - imposters are immutable through the API once created.  The expected workflow
+        is that you recreate the imposters rather than mutate them, which is a lightweight operation.</dd>
+
+        <dt>Why did you misspell impostor?</dt>
+        <dd>mountebank is not an educated man, having spent the waking hours of his
+          youth caring for the poor and the sick.</dd>
+
+        <dt>Does mountebank proved service virtualization?</dt>
+        <dd>Yes!  Service virtualization is the term that commercial vendors use that
+        came out of the SOA tools, and essentially just means over the wire test doubles, which
+        is something mountebank knows a thing or two about.  And, unlike commercial service virtualization packages,
+        he offers this free of charge, so there are no licensing concerns preventing you from pushing the
+        tests to the left of the project lifecycle.  mountebank is also far more friendly of continuous
+        integration and continuous delivery than commercial software.  A key goal of mountebank's approach
+        to service virtualization is that the intelligence of what will be returned by the test double belongs
+        as close to your test as possible, which is why he makes it easy for you to customize the response
+        on a test-by-test.  Putting the intelligence in the tool means that the tests become victims of your
+        environment rather than rulers of it.</dd>
+
+      </dl>
+
+<% include _footer %>
