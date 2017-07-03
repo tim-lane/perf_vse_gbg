@@ -1,22 +1,54 @@
 function (request, state, logger) {
-var request_body;
-var parseString = require('xml2js').parseString;
-var xml = request.body;
-parseString(xml, { explicitArray : false, ignoreAttrs : true }, function (err, result) {
-     request_body = JSON.stringify(result);
-});
-var json_body = JSON.parse(request_body);
-var ID = json_body['soapenv:Envelope']['soapenv:Body']['ns:AuthenticateSP']['ns:ProfileIDVersion']['ns:ID']
-var responseHeader = '<soap:Envelope xmlns:soap=\\\"http://www.w3.org/2003/05/soap-envelope\\\" xmlns:ns=\\\"http://www.id3global.com/ID3gWS/2013/04\\\"><soap:Header/><soap:Body><ns:AuthenticateSPResponse><ns:AuthenticateSPResult><ns:AuthenticationID>';
-var responseFooter = '</ns:AuthenticationID><ns:Timestamp>?</ns:Timestamp><ns:CustomerRef>?</ns:CustomerRef><ns:ProfileID>?</ns:ProfileID><ns:ProfileName>?</ns:ProfileName><ns:ProfileVersion>?</ns:ProfileVersion><ns:ProfileRevision>?</ns:ProfileRevision><ns:ProfileState>?</ns:ProfileState><ns:ResultCodes><!--Zeroormorerepetitions:--><ns:GlobalItemCheckResultCodes><ns:Name>?</ns:Name><ns:Description>?</ns:Description><ns:Comment><!--Zeroormorerepetitions:--><ns:GlobalItemCheckResultCode><ns:Description>?</ns:Description><ns:Code>?</ns:Code><ns:Override>?</ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Match><!--Zeroormorerepetitions:--><ns:GlobalItemCheckResultCode><ns:Description>?</ns:Description><ns:Code>?</ns:Code><ns:Override>?</ns:Override></ns:GlobalItemCheckResultCode></ns:Match><ns:Warning><!--Zeroormorerepetitions:--><ns:GlobalItemCheckResultCode><ns:Description>?</ns:Description><ns:Code>?</ns:Code><ns:Override>?</ns:Override></ns:GlobalItemCheckResultCode></ns:Warning><ns:Mismatch><!--Zeroormorerepetitions:--><ns:GlobalItemCheckResultCode><ns:Description>?</ns:Description><ns:Code>?</ns:Code><ns:Override>?</ns:Override></ns:GlobalItemCheckResultCode></ns:Mismatch><ns:ID>?</ns:ID><ns:Pass>?</ns:Pass><ns:Address>?</ns:Address><ns:Forename>?</ns:Forename><ns:Surname>?</ns:Surname><ns:DOB>?</ns:DOB><ns:Alert>?</ns:Alert><ns:Country>?</ns:Country></ns:GlobalItemCheckResultCodes></ns:ResultCodes><ns:Score>?</ns:Score><ns:BandText>?</ns:BandText><ns:UserBreakpoint>?</ns:UserBreakpoint><ns:NoRetry>?</ns:NoRetry><ns:ChainID>?</ns:ChainID><ns:Country>?</ns:Country></ns:AuthenticateSPResult></ns:AuthenticateSPResponse></soap:Body></soap:Envelope>';
-var responseBody = responseHeader + ID + responseFooter;
+
+//
+// convert XML to JSON for processing
+//
+	var request_body;
+	var parseString = require('xml2js').parseString;
+	var xml = request.body;
+	parseString(xml, { explicitArray : false, ignoreAttrs : true }, function (err, result) {
+		 request_body = JSON.stringify(result);
+	});
+	var json_body = JSON.parse(request_body);
+// 
+// extract id details from JSON
+//
+	var ID = json_body['soapenv:Envelope']['soapenv:Body']['ns:AuthenticateSP']['ns:ProfileIDVersion']['ns:ID']
+	var CustomerReference = json_body['soapenv:Envelope']['soapenv:Body']['ns:AuthenticateSP']['ns:CustomerReference']
+	var Country = json_body['soapenv:Envelope']['soapenv:Body']['ns:AuthenticateSP']['ns:InputData']['ns:Addresses']['ns:CurrentAddress']['ns:Country']
+//
+// setup variable elements
+//
+    var today = new Date();
+	var TimeStamp = today.toISOString();
+	var uuid = require('node-uuid');  
+	var ProfileId = uuid.v1(); 	  
+//
+// build the response 
+//	
+	var response = '<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ns="http://www.id3global.com/ID3gWS/2013/04"><soap:Header/><soap:Body><ns:AuthenticateSPResponse><ns:AuthenticateSPResult><ns:AuthenticationID>';
+    response = response + ID;
+	response = response + '</ns:AuthenticationID><ns:Timestamp>';
+	response = response + TimeStamp;
+	response = response + '</ns:Timestamp><ns:CustomerRef>';
+	response = response + CustomerReference;
+	response = response + '</ns:CustomerRef><ns:ProfileID>';
+	response = response + ProfileId;
+	response = response + '</ns:ProfileID><ns:ProfileName>';
+	response = response + Country;
+	response = response + '</ns:ProfileName><ns:ProfileVersion>1</ns:ProfileVersion><ns:ProfileRevision>76</ns:ProfileRevision><ns:ProfileState>Effective</ns:ProfileState><ns:ResultCodes><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCodes><ns:Name>UK National Identity Register</ns:Name><ns:Description>UK National Identity Register check. Performs authentication of first, last name, date of birth, address and phone numbers against UK National Identity Register.</ns:Description><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No/Insufficient telephone number supplied</ns:Description><ns:Code>260</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Match><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>Address valid/matched</ns:Description><ns:Code>2260</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Match><ns:Warning><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>?</ns:Description><ns:Code>?</ns:Code><ns:Override>?</ns:Override></ns:GlobalItemCheckResultCode></ns:Warning><ns:Mismatch><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>Surname invalid/did not match</ns:Description><ns:Code>8101</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Mismatch><ns:ID>245</ns:ID><ns:Pass>Mismatch</ns:Pass><ns:Address>Match</ns:Address><ns:Forename>Nomatch</ns:Forename><ns:Surname>Nomatch</ns:Surname><ns:DOB>Nomatch</ns:DOB><ns:Alert>Nomatch</ns:Alert><ns:Country>United Kingdom</ns:Country></ns:GlobalItemCheckResultCodes><ns:GlobalItemCheckResultCodes><ns:Name>UK Landline (Append)</ns:Name><ns:Description>UK Landline Telephone Database.  Provides authentication against first initial, surname, address and appends land telephone number or ex-directory status of bill payer.</ns:Description><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>Telephone number not specified by user</ns:Description><ns:Code>110</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Match><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No/insufficient details supplied for address #2. No search performed.</ns:Description><ns:Code>102</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Match><ns:Match><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No/insufficient details supplied for address #3. No search performed.</ns:Description><ns:Code>103</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Match><ns:Match><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No/insufficient details supplied for address #4. No search performed.</ns:Description><ns:Code>104</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Match><ns:Warning><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>?</ns:Description><ns:Code>?</ns:Code><ns:Override>?</ns:Override></ns:GlobalItemCheckResultCode></ns:Warning><ns:Mismatch><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No trace found for address #1 and surname</ns:Description><ns:Code>7031</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Mismatch><ns:ID>106</ns:ID><ns:Pass>Mismatch</ns:Pass><ns:Address>Nomatch</ns:Address><ns:Forename>Nomatch</ns:Forename><ns:Surname>Nomatch</ns:Surname><ns:DOB>NA</ns:DOB><ns:Alert>Nomatch</ns:Alert><ns:Country>United Kingdom</ns:Country></ns:GlobalItemCheckResultCodes><ns:GlobalItemCheckResultCodes><ns:Name>International PEP (Enhanced)</ns:Name><ns:Description>International PEP (Enhanced) Database check.  Provides authentication against Politically Exposed Persons lists from across the globe (contains known associates and known alias details)</ns:Description><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description></ns:Description><ns:Code></ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Match><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>Supplied full name did not match.</ns:Description><ns:Code>3500</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Match><ns:ID>209</ns:ID><ns:Pass>NA</ns:Pass><ns:Address>NA</ns:Address><ns:Forename>Nomatch</ns:Forename><ns:Surname>Nomatch</ns:Surname><ns:DOB>NA</ns:DOB><ns:Alert>Nomatch</ns:Alert><ns:Country>United Kingdom</ns:Country></ns:GlobalItemCheckResultCodes><ns:GlobalItemCheckResultCodes><ns:Name>UK Edited Electoral Roll</ns:Name><ns:Description>UK Edited Voters database that provides authentication of name and address; also includes 5 year history and some date of birth coverage.</ns:Description><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No middle name supplied</ns:Description><ns:Code>101</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No first year of residence supplied for address #1</ns:Description><ns:Code>151</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No last year of residence supplied for address #1. Applying default.</ns:Description><ns:Code>161</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No/insufficient address supplied for address #2</ns:Description><ns:Code>112</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No/insufficient address supplied for address #3</ns:Description><ns:Code>113</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Comment><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>No/insufficient address supplied for address #4</ns:Description><ns:Code>114</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Comment><ns:Match><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>Address #1 matched</ns:Description><ns:Code>1001</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Match><ns:Mismatch><!--Zero or more repetitions:--><ns:GlobalItemCheckResultCode><ns:Description>Surname did not match for address #1</ns:Description><ns:Code>7031</ns:Code><ns:Override></ns:Override></ns:GlobalItemCheckResultCode></ns:Mismatch><ns:ID>101</ns:ID><ns:Pass>Mismatch</ns:Pass><ns:Address>Match</ns:Address><ns:Forename>Nomatch</ns:Forename><ns:Surname>Nomatch</ns:Surname><ns:DOB>NA</ns:DOB><ns:Alert>Nomatch</ns:Alert><ns:Country>United Kingdom</ns:Country></ns:GlobalItemCheckResultCodes></ns:ResultCodes><ns:Score>1112</ns:Score><ns:BandText>REFER 1+1</ns:BandText><ns:Country>UK</ns:Country></ns:AuthenticateSPResult></ns:AuthenticateSPResponse></soap:Body></soap:Envelope>';
+	
+	logger.info("GBG - AuthenticateSP");
 
 	return {
-			headers: {
-				'Content-Type': 'application/text',
-				'Connection': 'Keep-Alive'
-			},
-			body: responseBody
-			};		
+//
+// send the response
+//
+		headers: {
+					'Content-Type': 'application/xml',
+					'Connection': 'Keep-Alive'
+				},
+		body: response
+	};		
 	
 }          
