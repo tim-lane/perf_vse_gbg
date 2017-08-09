@@ -1,0 +1,74 @@
+function (request, state, logger) {
+
+	logger.info('GBG - get	');
+//
+// connect to mysql server
+//
+var mysql = require('mysql');
+var async = require('async');
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "lanet",
+  password: "Leeroyx1",
+  database: "customer"	
+});
+var response = 'argh';
+
+async.waterfall([
+    function (callback) {
+        //do some async function here
+        con.connect(function(err) {
+            if (err) throw err;
+            console.log("Connected!");
+            //call this when you are done
+            //you can even pass param to next function
+            callback(null,true);
+        }); 
+    },
+	function (isConnected,callback1) {
+        if (!(isConnected)){
+        console.log("Connection failed! Skipping Query...")
+        callback1(null,"Error");
+        }
+        //do another async function here:
+        con.query('select * from accounts', function (err, rows, fields) {
+            if (err) throw err;
+            console.log(rows);
+            console.log('accountNumber is : ', rows[0].accountNumber);
+			result = rows[0].accountNumber;
+			response = result;
+            console.log("result is: ", result);
+            callback1(null,"Complete");
+        });
+    }
+    ],
+	function (err,result) {
+                if(result == "Error"){
+                alert("Someting went wrong!");
+                }
+                if(result == "Complete"){
+                alert("Done!");
+                }
+                return 0;
+    });
+
+console.log("seeting response");
+ 
+return {
+//
+// send the response
+//
+		headers: {
+					'Content-Type': 'application/xml',
+					'Connection': 'Keep-Alive'
+				},
+		body: response
+	};
+  
+  
+  
+
+
+			
+	
+}          

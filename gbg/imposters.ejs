@@ -11,6 +11,28 @@
 		"responses": 
 		[
 			{
+				"inject": "<%- stringify(filename, 'gbg/getAccountBalance.ejs') %>"
+			}
+		],
+		"predicates": 
+		[
+			{ 
+				"and": 
+                [
+					{ "contains": { "body": "authenticateSP" } },
+                    { "contains": { "body": "777777" } }
+                ]    			
+			}
+		] 
+	},
+	
+<%# -------------------------------------------------------------------- %>
+<%# GBG response                                              %>
+<%# -------------------------------------------------------------------- %>	
+	{
+		"responses": 
+		[
+			{
 				"inject": "<%- stringify(filename, 'gbg/authenticateSP.ejs') %>"
 			}
 		],

@@ -1,0 +1,73 @@
+function (request, state, logger) {
+
+	logger.info('GBG - get	');
+//
+// connect to mysql server
+//
+var mysql = require('mysql');
+var asynch = require('asynch');
+
+//  var result = '';
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "lanet",
+  password: "Leeroyx1",
+  database: "customer"	
+});
+
+con.connect();  
+  
+ // (err) {
+ // if (err) throw err;
+ // console.log("Connected!");
+//}
+con.query("select * from accounts", fetchedData);
+var result;
+var response;
+
+
+function fetchedData(err, rows, fields) {
+
+
+  //  if (err || !rows || !rows.length) {
+  //      // an error occurred or no blogs available
+  //      // handle error or send empty blog array
+  //      return res.send();
+  //  }
+	
+result = rows[0].accountNumber;
+console.log('result2 is : ', result);
+return result;
+}
+
+response = fetchedData();
+
+console.log('result1 is : ', result);
+//con.query('select * from accounts', (err, rows, fields) {
+//    if (err) throw err;
+//    console.log('rows are: ', rows);
+//    console.log('accountNumber is : ', rows[0].accountNumber);
+//	var result = rows[0].accountNumber;
+//	console.log('result is : ', result);
+//var response = result;
+//console.log('response is : ', response);
+//  });
+  
+return {
+//
+// send the response
+//
+		headers: {
+					'Content-Type': 'application/xml',
+					'Connection': 'Keep-Alive'
+				},
+		body: response
+	};
+  
+  
+  
+
+
+			
+	
+}          

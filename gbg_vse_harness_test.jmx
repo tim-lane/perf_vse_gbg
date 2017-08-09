@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.0 r1743807">
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.2 r1790748">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -64,7 +64,7 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="SVE_IP" elementType="Argument">
               <stringProp name="Argument.name">SVE_IP</stringProp>
-              <stringProp name="Argument.value">localhost</stringProp>
+              <stringProp name="Argument.value">10.26.40.67</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="SVE_PORT" elementType="Argument">
@@ -194,8 +194,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
@@ -204,8 +202,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip PLACE" enabled="false">
@@ -247,8 +246,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
@@ -257,8 +254,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip EACH_WAY" enabled="false">
@@ -303,8 +301,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
@@ -313,8 +309,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip MULTI" enabled="false">
@@ -353,8 +350,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
@@ -363,8 +358,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 betslip BUNDLE" enabled="false">
@@ -403,8 +399,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip</stringProp>
@@ -413,8 +407,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP" enabled="false">
@@ -861,8 +856,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">8081</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/</stringProp>
@@ -871,12 +864,13 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="TestPlan.comments">	</stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1320,8 +1314,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">8081</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/</stringProp>
@@ -1330,8 +1322,1841 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">	</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP - 777777" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ns=&quot;http://www.id3global.com/ID3gWS/2013/04&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;&#xd;
+	&lt;soapenv:Header/&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;ns:AuthenticateSP&gt;&#xd;
+			&lt;ns:ProfileIDVersion&gt;&#xd;
+				&lt;ns:ID&gt;a0f29d6f-2cb6-4009-b1bd-6c9c876ca70b&lt;/ns:ID&gt;&#xd;
+				&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+			&lt;/ns:ProfileIDVersion&gt;&#xd;
+			&lt;ns:CustomerReference&gt;777777&lt;/ns:CustomerReference&gt;&#xd;
+			&lt;ns:InputData&gt;&#xd;
+				&lt;ns:Images&gt;&#xd;
+					&lt;!--Zero or more repetitions:--&gt;&#xd;
+					&lt;ns:GlobalImage&gt;&#xd;
+						&lt;ns:Type&gt;?&lt;/ns:Type&gt;&#xd;
+						&lt;ns:AuthenticationID&gt;?&lt;/ns:AuthenticationID&gt;&#xd;
+					&lt;/ns:GlobalImage&gt;&#xd;
+				&lt;/ns:Images&gt;&#xd;
+				&lt;ns:Personal&gt;&#xd;
+					&lt;ns:PersonalDetails&gt;&#xd;
+						&lt;ns:Title&gt;Mr&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;Ima&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;Very&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;Smart&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;Male&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:DOBDay&gt;01&lt;/ns:DOBDay&gt;&#xd;
+						&lt;ns:DOBMonth&gt;04&lt;/ns:DOBMonth&gt;&#xd;
+						&lt;ns:DOBYear&gt;1990&lt;/ns:DOBYear&gt;&#xd;
+						&lt;ns:Birth&gt;&#xd;
+							&lt;ns:MothersMaidenName&gt;?&lt;/ns:MothersMaidenName&gt;&#xd;
+							&lt;ns:SurnameAtBirth&gt;?&lt;/ns:SurnameAtBirth&gt;&#xd;
+							&lt;ns:TownOfBirth&gt;?&lt;/ns:TownOfBirth&gt;&#xd;
+							&lt;ns:ProvinceOfBirth&gt;?&lt;/ns:ProvinceOfBirth&gt;&#xd;
+							&lt;ns:MunicipalityOfBirth&gt;?&lt;/ns:MunicipalityOfBirth&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;/ns:Birth&gt;&#xd;
+						&lt;ns:CountryOfBirth&gt;?&lt;/ns:CountryOfBirth&gt;&#xd;
+						&lt;ns:SecondSurname&gt;?&lt;/ns:SecondSurname&gt;&#xd;
+						&lt;ns:AdditionalMiddleNames&gt;&#xd;
+							&lt;!--Zero or more repetitions:--&gt;&#xd;
+							&lt;arr:string&gt;?&lt;/arr:string&gt;&#xd;
+						&lt;/ns:AdditionalMiddleNames&gt;&#xd;
+					&lt;/ns:PersonalDetails&gt;&#xd;
+					&lt;ns:AlternateName&gt;&#xd;
+						&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+						&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+						&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+						&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+						&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+						&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+						&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+					&lt;/ns:AlternateName&gt;&#xd;
+					&lt;ns:Aliases&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAlternateName&gt;&#xd;
+							&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+							&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+							&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+							&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+							&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+							&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+							&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+							&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+							&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+							&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+							&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+							&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+						&lt;/ns:GlobalAlternateName&gt;&#xd;
+					&lt;/ns:Aliases&gt;&#xd;
+				&lt;/ns:Personal&gt;&#xd;
+				&lt;ns:Addresses&gt;&#xd;
+					&lt;ns:CurrentAddress&gt;&#xd;
+						&lt;ns:Country&gt;United Kingdom&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;Buchan Drive Kingsway&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;GLOUCESTER&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;GL2 2EA&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;33&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:CurrentAddress&gt;&#xd;
+					&lt;ns:PreviousAddress1&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress1&gt;&#xd;
+					&lt;ns:PreviousAddress2&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress2&gt;&#xd;
+					&lt;ns:PreviousAddress3&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress3&gt;&#xd;
+					&lt;ns:HistoricAddresses&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAddress&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+							&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+							&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+							&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+							&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+							&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+							&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+							&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+							&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+							&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+							&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+							&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+							&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+							&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+							&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+							&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+							&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+							&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+							&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+							&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+							&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+							&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+							&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+							&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+							&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+							&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+							&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+							&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+							&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+						&lt;/ns:GlobalAddress&gt;&#xd;
+					&lt;/ns:HistoricAddresses&gt;&#xd;
+				&lt;/ns:Addresses&gt;&#xd;
+				&lt;ns:IdentityDocuments&gt;&#xd;
+					&lt;ns:China&gt;&#xd;
+						&lt;ns:ResidentIdentityCard&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:ResidentIdentityCard&gt;&#xd;
+					&lt;/ns:China&gt;&#xd;
+					&lt;ns:NewZealand&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+							&lt;ns:VehicleRegistration&gt;?&lt;/ns:VehicleRegistration&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:NewZealand&gt;&#xd;
+					&lt;ns:InternationalPassport&gt;&#xd;
+						&lt;ns:Number&gt;987654321&lt;/ns:Number&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+						&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+						&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+						&lt;ns:ShortPassportNumber&gt;?&lt;/ns:ShortPassportNumber&gt;&#xd;
+					&lt;/ns:InternationalPassport&gt;&#xd;
+					&lt;ns:EuropeanIdentityCard&gt;&#xd;
+						&lt;ns:Line1&gt;?&lt;/ns:Line1&gt;&#xd;
+						&lt;ns:Line2&gt;?&lt;/ns:Line2&gt;&#xd;
+						&lt;ns:Line3&gt;?&lt;/ns:Line3&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfNationality&gt;?&lt;/ns:CountryOfNationality&gt;&#xd;
+						&lt;ns:CountryOfIssue&gt;?&lt;/ns:CountryOfIssue&gt;&#xd;
+					&lt;/ns:EuropeanIdentityCard&gt;&#xd;
+					&lt;ns:UK&gt;&#xd;
+						&lt;ns:Passport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Passport&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+							&lt;ns:Microfiche&gt;?&lt;/ns:Microfiche&gt;&#xd;
+							&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+							&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+							&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+							&lt;ns:IssueNumber&gt;?&lt;/ns:IssueNumber&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+						&lt;ns:NationalInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:NationalInsuranceNumber&gt;&#xd;
+					&lt;/ns:UK&gt;&#xd;
+					&lt;ns:Australia&gt;&#xd;
+						&lt;ns:ShortPassport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;/ns:ShortPassport&gt;&#xd;
+						&lt;ns:Medicare&gt;&#xd;
+							&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+							&lt;ns:ReferenceNumber&gt;?&lt;/ns:ReferenceNumber&gt;&#xd;
+							&lt;ns:SurnameAtCitizenship&gt;?&lt;/ns:SurnameAtCitizenship&gt;&#xd;
+							&lt;ns:MiddleNameOnCard&gt;?&lt;/ns:MiddleNameOnCard&gt;&#xd;
+							&lt;ns:CardColour&gt;?&lt;/ns:CardColour&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Medicare&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:Australia&gt;&#xd;
+					&lt;ns:US&gt;&#xd;
+						&lt;ns:DrivingLicense&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicense&gt;&#xd;
+						&lt;ns:SocialSecurity&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialSecurity&gt;&#xd;
+					&lt;/ns:US&gt;&#xd;
+					&lt;ns:IdentityCard&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;/ns:IdentityCard&gt;&#xd;
+					&lt;ns:Canada&gt;&#xd;
+						&lt;ns:SocialInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialInsuranceNumber&gt;&#xd;
+					&lt;/ns:Canada&gt;&#xd;
+					&lt;ns:Mexico&gt;&#xd;
+						&lt;ns:TaxIdentificationNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIdentificationNumber&gt;&#xd;
+					&lt;/ns:Mexico&gt;&#xd;
+					&lt;ns:Brazil&gt;&#xd;
+						&lt;ns:CPFNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:CPFNumber&gt;&#xd;
+					&lt;/ns:Brazil&gt;&#xd;
+					&lt;ns:Spain&gt;&#xd;
+						&lt;ns:TaxIDNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIDNumber&gt;&#xd;
+					&lt;/ns:Spain&gt;&#xd;
+				&lt;/ns:IdentityDocuments&gt;&#xd;
+				&lt;ns:AddressDocuments&gt;&#xd;
+					&lt;ns:UKAddressDocuments&gt;&#xd;
+						&lt;ns:ElectricitySupplier&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+						&lt;/ns:ElectricitySupplier&gt;&#xd;
+					&lt;/ns:UKAddressDocuments&gt;&#xd;
+				&lt;/ns:AddressDocuments&gt;&#xd;
+				&lt;ns:ContactDetails&gt;&#xd;
+					&lt;ns:LandTelephone&gt;&#xd;
+						&lt;ns:ExDirectory&gt;?&lt;/ns:ExDirectory&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:LandTelephone&gt;&#xd;
+					&lt;ns:MobileTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:MobileTelephone&gt;&#xd;
+					&lt;ns:Email&gt;?&lt;/ns:Email&gt;&#xd;
+					&lt;ns:WorkTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:WorkTelephone&gt;&#xd;
+				&lt;/ns:ContactDetails&gt;&#xd;
+				&lt;ns:Employment&gt;&#xd;
+					&lt;ns:ResidenceType&gt;?&lt;/ns:ResidenceType&gt;&#xd;
+					&lt;ns:EmploymentStatus&gt;?&lt;/ns:EmploymentStatus&gt;&#xd;
+					&lt;ns:CurrentTime&gt;?&lt;/ns:CurrentTime&gt;&#xd;
+				&lt;/ns:Employment&gt;&#xd;
+				&lt;ns:BankingDetails&gt;&#xd;
+					&lt;ns:BankAccount&gt;&#xd;
+						&lt;ns:SortCode&gt;?&lt;/ns:SortCode&gt;&#xd;
+						&lt;ns:AccountNumber&gt;?&lt;/ns:AccountNumber&gt;&#xd;
+					&lt;/ns:BankAccount&gt;&#xd;
+					&lt;ns:CreditDebitCard&gt;&#xd;
+						&lt;ns:CardHolderName&gt;?&lt;/ns:CardHolderName&gt;&#xd;
+						&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:StartMonth&gt;?&lt;/ns:StartMonth&gt;&#xd;
+						&lt;ns:StartYear&gt;?&lt;/ns:StartYear&gt;&#xd;
+						&lt;ns:CardIssueNumber&gt;?&lt;/ns:CardIssueNumber&gt;&#xd;
+						&lt;ns:CardType&gt;?&lt;/ns:CardType&gt;&#xd;
+						&lt;ns:CardVerificationCode&gt;?&lt;/ns:CardVerificationCode&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;ns:MerchantData&gt;?&lt;/ns:MerchantData&gt;&#xd;
+						&lt;ns:ThreeDSecureResponse&gt;?&lt;/ns:ThreeDSecureResponse&gt;&#xd;
+					&lt;/ns:CreditDebitCard&gt;&#xd;
+				&lt;/ns:BankingDetails&gt;&#xd;
+				&lt;ns:GlobalGeneric&gt;&#xd;
+					&lt;ns:Generic1&gt;?&lt;/ns:Generic1&gt;&#xd;
+					&lt;ns:Generic2&gt;?&lt;/ns:Generic2&gt;&#xd;
+					&lt;ns:Generic3&gt;?&lt;/ns:Generic3&gt;&#xd;
+					&lt;ns:Generic4&gt;?&lt;/ns:Generic4&gt;&#xd;
+					&lt;ns:Generic5&gt;?&lt;/ns:Generic5&gt;&#xd;
+					&lt;ns:Generic6&gt;?&lt;/ns:Generic6&gt;&#xd;
+					&lt;ns:Generic7&gt;?&lt;/ns:Generic7&gt;&#xd;
+					&lt;ns:Generic8&gt;?&lt;/ns:Generic8&gt;&#xd;
+					&lt;ns:Generic9&gt;?&lt;/ns:Generic9&gt;&#xd;
+					&lt;ns:Generic10&gt;?&lt;/ns:Generic10&gt;&#xd;
+					&lt;ns:Generic11&gt;?&lt;/ns:Generic11&gt;&#xd;
+					&lt;ns:Generic12&gt;?&lt;/ns:Generic12&gt;&#xd;
+					&lt;ns:Generic13&gt;?&lt;/ns:Generic13&gt;&#xd;
+					&lt;ns:Generic14&gt;?&lt;/ns:Generic14&gt;&#xd;
+					&lt;ns:Generic15&gt;?&lt;/ns:Generic15&gt;&#xd;
+					&lt;ns:Generic16&gt;?&lt;/ns:Generic16&gt;&#xd;
+					&lt;ns:Generic17&gt;?&lt;/ns:Generic17&gt;&#xd;
+					&lt;ns:Generic18&gt;?&lt;/ns:Generic18&gt;&#xd;
+					&lt;ns:Generic19&gt;?&lt;/ns:Generic19&gt;&#xd;
+					&lt;ns:Generic20&gt;?&lt;/ns:Generic20&gt;&#xd;
+				&lt;/ns:GlobalGeneric&gt;&#xd;
+				&lt;ns:Location&gt;&#xd;
+					&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+					&lt;ns:BlackBoxID&gt;?&lt;/ns:BlackBoxID&gt;&#xd;
+					&lt;ns:IndividualID&gt;?&lt;/ns:IndividualID&gt;&#xd;
+					&lt;ns:AcceptHeaders&gt;?&lt;/ns:AcceptHeaders&gt;&#xd;
+					&lt;ns:UserAgent&gt;?&lt;/ns:UserAgent&gt;&#xd;
+					&lt;ns:IPAddress&gt;?&lt;/ns:IPAddress&gt;&#xd;
+				&lt;/ns:Location&gt;&#xd;
+				&lt;ns:Consent&gt;&#xd;
+					&lt;ns:UKDriverConsent&gt;?&lt;/ns:UKDriverConsent&gt;&#xd;
+				&lt;/ns:Consent&gt;&#xd;
+			&lt;/ns:InputData&gt;&#xd;
+		&lt;/ns:AuthenticateSP&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">	</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP - 987654321" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ns=&quot;http://www.id3global.com/ID3gWS/2013/04&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;&#xd;
+	&lt;soapenv:Header/&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;ns:AuthenticateSP&gt;&#xd;
+			&lt;ns:ProfileIDVersion&gt;&#xd;
+				&lt;ns:ID&gt;a0f29d6f-2cb6-4009-b1bd-6c9c876ca70b&lt;/ns:ID&gt;&#xd;
+				&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+			&lt;/ns:ProfileIDVersion&gt;&#xd;
+			&lt;ns:CustomerReference&gt;987654321&lt;/ns:CustomerReference&gt;&#xd;
+			&lt;ns:InputData&gt;&#xd;
+				&lt;ns:Images&gt;&#xd;
+					&lt;!--Zero or more repetitions:--&gt;&#xd;
+					&lt;ns:GlobalImage&gt;&#xd;
+						&lt;ns:Type&gt;?&lt;/ns:Type&gt;&#xd;
+						&lt;ns:AuthenticationID&gt;?&lt;/ns:AuthenticationID&gt;&#xd;
+					&lt;/ns:GlobalImage&gt;&#xd;
+				&lt;/ns:Images&gt;&#xd;
+				&lt;ns:Personal&gt;&#xd;
+					&lt;ns:PersonalDetails&gt;&#xd;
+						&lt;ns:Title&gt;Mr&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;Ima&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;Very&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;Smart&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;Male&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:DOBDay&gt;01&lt;/ns:DOBDay&gt;&#xd;
+						&lt;ns:DOBMonth&gt;04&lt;/ns:DOBMonth&gt;&#xd;
+						&lt;ns:DOBYear&gt;1990&lt;/ns:DOBYear&gt;&#xd;
+						&lt;ns:Birth&gt;&#xd;
+							&lt;ns:MothersMaidenName&gt;?&lt;/ns:MothersMaidenName&gt;&#xd;
+							&lt;ns:SurnameAtBirth&gt;?&lt;/ns:SurnameAtBirth&gt;&#xd;
+							&lt;ns:TownOfBirth&gt;?&lt;/ns:TownOfBirth&gt;&#xd;
+							&lt;ns:ProvinceOfBirth&gt;?&lt;/ns:ProvinceOfBirth&gt;&#xd;
+							&lt;ns:MunicipalityOfBirth&gt;?&lt;/ns:MunicipalityOfBirth&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;/ns:Birth&gt;&#xd;
+						&lt;ns:CountryOfBirth&gt;?&lt;/ns:CountryOfBirth&gt;&#xd;
+						&lt;ns:SecondSurname&gt;?&lt;/ns:SecondSurname&gt;&#xd;
+						&lt;ns:AdditionalMiddleNames&gt;&#xd;
+							&lt;!--Zero or more repetitions:--&gt;&#xd;
+							&lt;arr:string&gt;?&lt;/arr:string&gt;&#xd;
+						&lt;/ns:AdditionalMiddleNames&gt;&#xd;
+					&lt;/ns:PersonalDetails&gt;&#xd;
+					&lt;ns:AlternateName&gt;&#xd;
+						&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+						&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+						&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+						&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+						&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+						&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+						&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+					&lt;/ns:AlternateName&gt;&#xd;
+					&lt;ns:Aliases&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAlternateName&gt;&#xd;
+							&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+							&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+							&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+							&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+							&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+							&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+							&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+							&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+							&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+							&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+							&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+							&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+						&lt;/ns:GlobalAlternateName&gt;&#xd;
+					&lt;/ns:Aliases&gt;&#xd;
+				&lt;/ns:Personal&gt;&#xd;
+				&lt;ns:Addresses&gt;&#xd;
+					&lt;ns:CurrentAddress&gt;&#xd;
+						&lt;ns:Country&gt;United Kingdom&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;Buchan Drive Kingsway&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;GLOUCESTER&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;GL2 2EA&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;33&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:CurrentAddress&gt;&#xd;
+					&lt;ns:PreviousAddress1&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress1&gt;&#xd;
+					&lt;ns:PreviousAddress2&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress2&gt;&#xd;
+					&lt;ns:PreviousAddress3&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress3&gt;&#xd;
+					&lt;ns:HistoricAddresses&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAddress&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+							&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+							&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+							&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+							&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+							&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+							&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+							&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+							&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+							&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+							&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+							&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+							&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+							&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+							&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+							&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+							&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+							&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+							&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+							&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+							&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+							&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+							&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+							&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+							&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+							&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+							&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+							&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+							&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+						&lt;/ns:GlobalAddress&gt;&#xd;
+					&lt;/ns:HistoricAddresses&gt;&#xd;
+				&lt;/ns:Addresses&gt;&#xd;
+				&lt;ns:IdentityDocuments&gt;&#xd;
+					&lt;ns:China&gt;&#xd;
+						&lt;ns:ResidentIdentityCard&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:ResidentIdentityCard&gt;&#xd;
+					&lt;/ns:China&gt;&#xd;
+					&lt;ns:NewZealand&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+							&lt;ns:VehicleRegistration&gt;?&lt;/ns:VehicleRegistration&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:NewZealand&gt;&#xd;
+					&lt;ns:InternationalPassport&gt;&#xd;
+						&lt;ns:Number&gt;987654321&lt;/ns:Number&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+						&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+						&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+						&lt;ns:ShortPassportNumber&gt;?&lt;/ns:ShortPassportNumber&gt;&#xd;
+					&lt;/ns:InternationalPassport&gt;&#xd;
+					&lt;ns:EuropeanIdentityCard&gt;&#xd;
+						&lt;ns:Line1&gt;?&lt;/ns:Line1&gt;&#xd;
+						&lt;ns:Line2&gt;?&lt;/ns:Line2&gt;&#xd;
+						&lt;ns:Line3&gt;?&lt;/ns:Line3&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfNationality&gt;?&lt;/ns:CountryOfNationality&gt;&#xd;
+						&lt;ns:CountryOfIssue&gt;?&lt;/ns:CountryOfIssue&gt;&#xd;
+					&lt;/ns:EuropeanIdentityCard&gt;&#xd;
+					&lt;ns:UK&gt;&#xd;
+						&lt;ns:Passport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Passport&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+							&lt;ns:Microfiche&gt;?&lt;/ns:Microfiche&gt;&#xd;
+							&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+							&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+							&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+							&lt;ns:IssueNumber&gt;?&lt;/ns:IssueNumber&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+						&lt;ns:NationalInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:NationalInsuranceNumber&gt;&#xd;
+					&lt;/ns:UK&gt;&#xd;
+					&lt;ns:Australia&gt;&#xd;
+						&lt;ns:ShortPassport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;/ns:ShortPassport&gt;&#xd;
+						&lt;ns:Medicare&gt;&#xd;
+							&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+							&lt;ns:ReferenceNumber&gt;?&lt;/ns:ReferenceNumber&gt;&#xd;
+							&lt;ns:SurnameAtCitizenship&gt;?&lt;/ns:SurnameAtCitizenship&gt;&#xd;
+							&lt;ns:MiddleNameOnCard&gt;?&lt;/ns:MiddleNameOnCard&gt;&#xd;
+							&lt;ns:CardColour&gt;?&lt;/ns:CardColour&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Medicare&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:Australia&gt;&#xd;
+					&lt;ns:US&gt;&#xd;
+						&lt;ns:DrivingLicense&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicense&gt;&#xd;
+						&lt;ns:SocialSecurity&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialSecurity&gt;&#xd;
+					&lt;/ns:US&gt;&#xd;
+					&lt;ns:IdentityCard&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;/ns:IdentityCard&gt;&#xd;
+					&lt;ns:Canada&gt;&#xd;
+						&lt;ns:SocialInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialInsuranceNumber&gt;&#xd;
+					&lt;/ns:Canada&gt;&#xd;
+					&lt;ns:Mexico&gt;&#xd;
+						&lt;ns:TaxIdentificationNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIdentificationNumber&gt;&#xd;
+					&lt;/ns:Mexico&gt;&#xd;
+					&lt;ns:Brazil&gt;&#xd;
+						&lt;ns:CPFNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:CPFNumber&gt;&#xd;
+					&lt;/ns:Brazil&gt;&#xd;
+					&lt;ns:Spain&gt;&#xd;
+						&lt;ns:TaxIDNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIDNumber&gt;&#xd;
+					&lt;/ns:Spain&gt;&#xd;
+				&lt;/ns:IdentityDocuments&gt;&#xd;
+				&lt;ns:AddressDocuments&gt;&#xd;
+					&lt;ns:UKAddressDocuments&gt;&#xd;
+						&lt;ns:ElectricitySupplier&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+						&lt;/ns:ElectricitySupplier&gt;&#xd;
+					&lt;/ns:UKAddressDocuments&gt;&#xd;
+				&lt;/ns:AddressDocuments&gt;&#xd;
+				&lt;ns:ContactDetails&gt;&#xd;
+					&lt;ns:LandTelephone&gt;&#xd;
+						&lt;ns:ExDirectory&gt;?&lt;/ns:ExDirectory&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:LandTelephone&gt;&#xd;
+					&lt;ns:MobileTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:MobileTelephone&gt;&#xd;
+					&lt;ns:Email&gt;?&lt;/ns:Email&gt;&#xd;
+					&lt;ns:WorkTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:WorkTelephone&gt;&#xd;
+				&lt;/ns:ContactDetails&gt;&#xd;
+				&lt;ns:Employment&gt;&#xd;
+					&lt;ns:ResidenceType&gt;?&lt;/ns:ResidenceType&gt;&#xd;
+					&lt;ns:EmploymentStatus&gt;?&lt;/ns:EmploymentStatus&gt;&#xd;
+					&lt;ns:CurrentTime&gt;?&lt;/ns:CurrentTime&gt;&#xd;
+				&lt;/ns:Employment&gt;&#xd;
+				&lt;ns:BankingDetails&gt;&#xd;
+					&lt;ns:BankAccount&gt;&#xd;
+						&lt;ns:SortCode&gt;?&lt;/ns:SortCode&gt;&#xd;
+						&lt;ns:AccountNumber&gt;?&lt;/ns:AccountNumber&gt;&#xd;
+					&lt;/ns:BankAccount&gt;&#xd;
+					&lt;ns:CreditDebitCard&gt;&#xd;
+						&lt;ns:CardHolderName&gt;?&lt;/ns:CardHolderName&gt;&#xd;
+						&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:StartMonth&gt;?&lt;/ns:StartMonth&gt;&#xd;
+						&lt;ns:StartYear&gt;?&lt;/ns:StartYear&gt;&#xd;
+						&lt;ns:CardIssueNumber&gt;?&lt;/ns:CardIssueNumber&gt;&#xd;
+						&lt;ns:CardType&gt;?&lt;/ns:CardType&gt;&#xd;
+						&lt;ns:CardVerificationCode&gt;?&lt;/ns:CardVerificationCode&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;ns:MerchantData&gt;?&lt;/ns:MerchantData&gt;&#xd;
+						&lt;ns:ThreeDSecureResponse&gt;?&lt;/ns:ThreeDSecureResponse&gt;&#xd;
+					&lt;/ns:CreditDebitCard&gt;&#xd;
+				&lt;/ns:BankingDetails&gt;&#xd;
+				&lt;ns:GlobalGeneric&gt;&#xd;
+					&lt;ns:Generic1&gt;?&lt;/ns:Generic1&gt;&#xd;
+					&lt;ns:Generic2&gt;?&lt;/ns:Generic2&gt;&#xd;
+					&lt;ns:Generic3&gt;?&lt;/ns:Generic3&gt;&#xd;
+					&lt;ns:Generic4&gt;?&lt;/ns:Generic4&gt;&#xd;
+					&lt;ns:Generic5&gt;?&lt;/ns:Generic5&gt;&#xd;
+					&lt;ns:Generic6&gt;?&lt;/ns:Generic6&gt;&#xd;
+					&lt;ns:Generic7&gt;?&lt;/ns:Generic7&gt;&#xd;
+					&lt;ns:Generic8&gt;?&lt;/ns:Generic8&gt;&#xd;
+					&lt;ns:Generic9&gt;?&lt;/ns:Generic9&gt;&#xd;
+					&lt;ns:Generic10&gt;?&lt;/ns:Generic10&gt;&#xd;
+					&lt;ns:Generic11&gt;?&lt;/ns:Generic11&gt;&#xd;
+					&lt;ns:Generic12&gt;?&lt;/ns:Generic12&gt;&#xd;
+					&lt;ns:Generic13&gt;?&lt;/ns:Generic13&gt;&#xd;
+					&lt;ns:Generic14&gt;?&lt;/ns:Generic14&gt;&#xd;
+					&lt;ns:Generic15&gt;?&lt;/ns:Generic15&gt;&#xd;
+					&lt;ns:Generic16&gt;?&lt;/ns:Generic16&gt;&#xd;
+					&lt;ns:Generic17&gt;?&lt;/ns:Generic17&gt;&#xd;
+					&lt;ns:Generic18&gt;?&lt;/ns:Generic18&gt;&#xd;
+					&lt;ns:Generic19&gt;?&lt;/ns:Generic19&gt;&#xd;
+					&lt;ns:Generic20&gt;?&lt;/ns:Generic20&gt;&#xd;
+				&lt;/ns:GlobalGeneric&gt;&#xd;
+				&lt;ns:Location&gt;&#xd;
+					&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+					&lt;ns:BlackBoxID&gt;?&lt;/ns:BlackBoxID&gt;&#xd;
+					&lt;ns:IndividualID&gt;?&lt;/ns:IndividualID&gt;&#xd;
+					&lt;ns:AcceptHeaders&gt;?&lt;/ns:AcceptHeaders&gt;&#xd;
+					&lt;ns:UserAgent&gt;?&lt;/ns:UserAgent&gt;&#xd;
+					&lt;ns:IPAddress&gt;?&lt;/ns:IPAddress&gt;&#xd;
+				&lt;/ns:Location&gt;&#xd;
+				&lt;ns:Consent&gt;&#xd;
+					&lt;ns:UKDriverConsent&gt;?&lt;/ns:UKDriverConsent&gt;&#xd;
+				&lt;/ns:Consent&gt;&#xd;
+			&lt;/ns:InputData&gt;&#xd;
+		&lt;/ns:AuthenticateSP&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">	</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP - 123456789" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ns=&quot;http://www.id3global.com/ID3gWS/2013/04&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;&#xd;
+	&lt;soapenv:Header/&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;ns:AuthenticateSP&gt;&#xd;
+			&lt;ns:ProfileIDVersion&gt;&#xd;
+				&lt;ns:ID&gt;a0f29d6f-2cb6-4009-b1bd-6c9c876ca70b&lt;/ns:ID&gt;&#xd;
+				&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+			&lt;/ns:ProfileIDVersion&gt;&#xd;
+			&lt;ns:CustomerReference&gt;123456789&lt;/ns:CustomerReference&gt;&#xd;
+			&lt;ns:InputData&gt;&#xd;
+				&lt;ns:Images&gt;&#xd;
+					&lt;!--Zero or more repetitions:--&gt;&#xd;
+					&lt;ns:GlobalImage&gt;&#xd;
+						&lt;ns:Type&gt;?&lt;/ns:Type&gt;&#xd;
+						&lt;ns:AuthenticationID&gt;?&lt;/ns:AuthenticationID&gt;&#xd;
+					&lt;/ns:GlobalImage&gt;&#xd;
+				&lt;/ns:Images&gt;&#xd;
+				&lt;ns:Personal&gt;&#xd;
+					&lt;ns:PersonalDetails&gt;&#xd;
+						&lt;ns:Title&gt;Mr&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;Ima&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;Very&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;Smart&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;Male&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:DOBDay&gt;01&lt;/ns:DOBDay&gt;&#xd;
+						&lt;ns:DOBMonth&gt;04&lt;/ns:DOBMonth&gt;&#xd;
+						&lt;ns:DOBYear&gt;1990&lt;/ns:DOBYear&gt;&#xd;
+						&lt;ns:Birth&gt;&#xd;
+							&lt;ns:MothersMaidenName&gt;?&lt;/ns:MothersMaidenName&gt;&#xd;
+							&lt;ns:SurnameAtBirth&gt;?&lt;/ns:SurnameAtBirth&gt;&#xd;
+							&lt;ns:TownOfBirth&gt;?&lt;/ns:TownOfBirth&gt;&#xd;
+							&lt;ns:ProvinceOfBirth&gt;?&lt;/ns:ProvinceOfBirth&gt;&#xd;
+							&lt;ns:MunicipalityOfBirth&gt;?&lt;/ns:MunicipalityOfBirth&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;/ns:Birth&gt;&#xd;
+						&lt;ns:CountryOfBirth&gt;?&lt;/ns:CountryOfBirth&gt;&#xd;
+						&lt;ns:SecondSurname&gt;?&lt;/ns:SecondSurname&gt;&#xd;
+						&lt;ns:AdditionalMiddleNames&gt;&#xd;
+							&lt;!--Zero or more repetitions:--&gt;&#xd;
+							&lt;arr:string&gt;?&lt;/arr:string&gt;&#xd;
+						&lt;/ns:AdditionalMiddleNames&gt;&#xd;
+					&lt;/ns:PersonalDetails&gt;&#xd;
+					&lt;ns:AlternateName&gt;&#xd;
+						&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+						&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+						&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+						&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+						&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+						&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+						&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+					&lt;/ns:AlternateName&gt;&#xd;
+					&lt;ns:Aliases&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAlternateName&gt;&#xd;
+							&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+							&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+							&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+							&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+							&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+							&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+							&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+							&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+							&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+							&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+							&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+							&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+						&lt;/ns:GlobalAlternateName&gt;&#xd;
+					&lt;/ns:Aliases&gt;&#xd;
+				&lt;/ns:Personal&gt;&#xd;
+				&lt;ns:Addresses&gt;&#xd;
+					&lt;ns:CurrentAddress&gt;&#xd;
+						&lt;ns:Country&gt;United Kingdom&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;Buchan Drive Kingsway&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;GLOUCESTER&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;GL2 2EA&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;33&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:CurrentAddress&gt;&#xd;
+					&lt;ns:PreviousAddress1&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress1&gt;&#xd;
+					&lt;ns:PreviousAddress2&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress2&gt;&#xd;
+					&lt;ns:PreviousAddress3&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress3&gt;&#xd;
+					&lt;ns:HistoricAddresses&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAddress&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+							&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+							&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+							&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+							&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+							&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+							&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+							&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+							&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+							&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+							&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+							&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+							&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+							&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+							&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+							&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+							&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+							&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+							&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+							&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+							&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+							&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+							&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+							&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+							&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+							&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+							&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+							&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+							&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+						&lt;/ns:GlobalAddress&gt;&#xd;
+					&lt;/ns:HistoricAddresses&gt;&#xd;
+				&lt;/ns:Addresses&gt;&#xd;
+				&lt;ns:IdentityDocuments&gt;&#xd;
+					&lt;ns:China&gt;&#xd;
+						&lt;ns:ResidentIdentityCard&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:ResidentIdentityCard&gt;&#xd;
+					&lt;/ns:China&gt;&#xd;
+					&lt;ns:NewZealand&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+							&lt;ns:VehicleRegistration&gt;?&lt;/ns:VehicleRegistration&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:NewZealand&gt;&#xd;
+					&lt;ns:InternationalPassport&gt;&#xd;
+						&lt;ns:Number&gt;123456789&lt;/ns:Number&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+						&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+						&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+						&lt;ns:ShortPassportNumber&gt;?&lt;/ns:ShortPassportNumber&gt;&#xd;
+					&lt;/ns:InternationalPassport&gt;&#xd;
+					&lt;ns:EuropeanIdentityCard&gt;&#xd;
+						&lt;ns:Line1&gt;?&lt;/ns:Line1&gt;&#xd;
+						&lt;ns:Line2&gt;?&lt;/ns:Line2&gt;&#xd;
+						&lt;ns:Line3&gt;?&lt;/ns:Line3&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfNationality&gt;?&lt;/ns:CountryOfNationality&gt;&#xd;
+						&lt;ns:CountryOfIssue&gt;?&lt;/ns:CountryOfIssue&gt;&#xd;
+					&lt;/ns:EuropeanIdentityCard&gt;&#xd;
+					&lt;ns:UK&gt;&#xd;
+						&lt;ns:Passport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Passport&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+							&lt;ns:Microfiche&gt;?&lt;/ns:Microfiche&gt;&#xd;
+							&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+							&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+							&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+							&lt;ns:IssueNumber&gt;?&lt;/ns:IssueNumber&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+						&lt;ns:NationalInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:NationalInsuranceNumber&gt;&#xd;
+					&lt;/ns:UK&gt;&#xd;
+					&lt;ns:Australia&gt;&#xd;
+						&lt;ns:ShortPassport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;/ns:ShortPassport&gt;&#xd;
+						&lt;ns:Medicare&gt;&#xd;
+							&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+							&lt;ns:ReferenceNumber&gt;?&lt;/ns:ReferenceNumber&gt;&#xd;
+							&lt;ns:SurnameAtCitizenship&gt;?&lt;/ns:SurnameAtCitizenship&gt;&#xd;
+							&lt;ns:MiddleNameOnCard&gt;?&lt;/ns:MiddleNameOnCard&gt;&#xd;
+							&lt;ns:CardColour&gt;?&lt;/ns:CardColour&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Medicare&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:Australia&gt;&#xd;
+					&lt;ns:US&gt;&#xd;
+						&lt;ns:DrivingLicense&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicense&gt;&#xd;
+						&lt;ns:SocialSecurity&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialSecurity&gt;&#xd;
+					&lt;/ns:US&gt;&#xd;
+					&lt;ns:IdentityCard&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;/ns:IdentityCard&gt;&#xd;
+					&lt;ns:Canada&gt;&#xd;
+						&lt;ns:SocialInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialInsuranceNumber&gt;&#xd;
+					&lt;/ns:Canada&gt;&#xd;
+					&lt;ns:Mexico&gt;&#xd;
+						&lt;ns:TaxIdentificationNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIdentificationNumber&gt;&#xd;
+					&lt;/ns:Mexico&gt;&#xd;
+					&lt;ns:Brazil&gt;&#xd;
+						&lt;ns:CPFNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:CPFNumber&gt;&#xd;
+					&lt;/ns:Brazil&gt;&#xd;
+					&lt;ns:Spain&gt;&#xd;
+						&lt;ns:TaxIDNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIDNumber&gt;&#xd;
+					&lt;/ns:Spain&gt;&#xd;
+				&lt;/ns:IdentityDocuments&gt;&#xd;
+				&lt;ns:AddressDocuments&gt;&#xd;
+					&lt;ns:UKAddressDocuments&gt;&#xd;
+						&lt;ns:ElectricitySupplier&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+						&lt;/ns:ElectricitySupplier&gt;&#xd;
+					&lt;/ns:UKAddressDocuments&gt;&#xd;
+				&lt;/ns:AddressDocuments&gt;&#xd;
+				&lt;ns:ContactDetails&gt;&#xd;
+					&lt;ns:LandTelephone&gt;&#xd;
+						&lt;ns:ExDirectory&gt;?&lt;/ns:ExDirectory&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:LandTelephone&gt;&#xd;
+					&lt;ns:MobileTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:MobileTelephone&gt;&#xd;
+					&lt;ns:Email&gt;?&lt;/ns:Email&gt;&#xd;
+					&lt;ns:WorkTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:WorkTelephone&gt;&#xd;
+				&lt;/ns:ContactDetails&gt;&#xd;
+				&lt;ns:Employment&gt;&#xd;
+					&lt;ns:ResidenceType&gt;?&lt;/ns:ResidenceType&gt;&#xd;
+					&lt;ns:EmploymentStatus&gt;?&lt;/ns:EmploymentStatus&gt;&#xd;
+					&lt;ns:CurrentTime&gt;?&lt;/ns:CurrentTime&gt;&#xd;
+				&lt;/ns:Employment&gt;&#xd;
+				&lt;ns:BankingDetails&gt;&#xd;
+					&lt;ns:BankAccount&gt;&#xd;
+						&lt;ns:SortCode&gt;?&lt;/ns:SortCode&gt;&#xd;
+						&lt;ns:AccountNumber&gt;?&lt;/ns:AccountNumber&gt;&#xd;
+					&lt;/ns:BankAccount&gt;&#xd;
+					&lt;ns:CreditDebitCard&gt;&#xd;
+						&lt;ns:CardHolderName&gt;?&lt;/ns:CardHolderName&gt;&#xd;
+						&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:StartMonth&gt;?&lt;/ns:StartMonth&gt;&#xd;
+						&lt;ns:StartYear&gt;?&lt;/ns:StartYear&gt;&#xd;
+						&lt;ns:CardIssueNumber&gt;?&lt;/ns:CardIssueNumber&gt;&#xd;
+						&lt;ns:CardType&gt;?&lt;/ns:CardType&gt;&#xd;
+						&lt;ns:CardVerificationCode&gt;?&lt;/ns:CardVerificationCode&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;ns:MerchantData&gt;?&lt;/ns:MerchantData&gt;&#xd;
+						&lt;ns:ThreeDSecureResponse&gt;?&lt;/ns:ThreeDSecureResponse&gt;&#xd;
+					&lt;/ns:CreditDebitCard&gt;&#xd;
+				&lt;/ns:BankingDetails&gt;&#xd;
+				&lt;ns:GlobalGeneric&gt;&#xd;
+					&lt;ns:Generic1&gt;?&lt;/ns:Generic1&gt;&#xd;
+					&lt;ns:Generic2&gt;?&lt;/ns:Generic2&gt;&#xd;
+					&lt;ns:Generic3&gt;?&lt;/ns:Generic3&gt;&#xd;
+					&lt;ns:Generic4&gt;?&lt;/ns:Generic4&gt;&#xd;
+					&lt;ns:Generic5&gt;?&lt;/ns:Generic5&gt;&#xd;
+					&lt;ns:Generic6&gt;?&lt;/ns:Generic6&gt;&#xd;
+					&lt;ns:Generic7&gt;?&lt;/ns:Generic7&gt;&#xd;
+					&lt;ns:Generic8&gt;?&lt;/ns:Generic8&gt;&#xd;
+					&lt;ns:Generic9&gt;?&lt;/ns:Generic9&gt;&#xd;
+					&lt;ns:Generic10&gt;?&lt;/ns:Generic10&gt;&#xd;
+					&lt;ns:Generic11&gt;?&lt;/ns:Generic11&gt;&#xd;
+					&lt;ns:Generic12&gt;?&lt;/ns:Generic12&gt;&#xd;
+					&lt;ns:Generic13&gt;?&lt;/ns:Generic13&gt;&#xd;
+					&lt;ns:Generic14&gt;?&lt;/ns:Generic14&gt;&#xd;
+					&lt;ns:Generic15&gt;?&lt;/ns:Generic15&gt;&#xd;
+					&lt;ns:Generic16&gt;?&lt;/ns:Generic16&gt;&#xd;
+					&lt;ns:Generic17&gt;?&lt;/ns:Generic17&gt;&#xd;
+					&lt;ns:Generic18&gt;?&lt;/ns:Generic18&gt;&#xd;
+					&lt;ns:Generic19&gt;?&lt;/ns:Generic19&gt;&#xd;
+					&lt;ns:Generic20&gt;?&lt;/ns:Generic20&gt;&#xd;
+				&lt;/ns:GlobalGeneric&gt;&#xd;
+				&lt;ns:Location&gt;&#xd;
+					&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+					&lt;ns:BlackBoxID&gt;?&lt;/ns:BlackBoxID&gt;&#xd;
+					&lt;ns:IndividualID&gt;?&lt;/ns:IndividualID&gt;&#xd;
+					&lt;ns:AcceptHeaders&gt;?&lt;/ns:AcceptHeaders&gt;&#xd;
+					&lt;ns:UserAgent&gt;?&lt;/ns:UserAgent&gt;&#xd;
+					&lt;ns:IPAddress&gt;?&lt;/ns:IPAddress&gt;&#xd;
+				&lt;/ns:Location&gt;&#xd;
+				&lt;ns:Consent&gt;&#xd;
+					&lt;ns:UKDriverConsent&gt;?&lt;/ns:UKDriverConsent&gt;&#xd;
+				&lt;/ns:Consent&gt;&#xd;
+			&lt;/ns:InputData&gt;&#xd;
+		&lt;/ns:AuthenticateSP&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">	</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 Authenticate SP - 123456789" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ns=&quot;http://www.id3global.com/ID3gWS/2013/04&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;&#xd;
+	&lt;soapenv:Header/&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;ns:AuthenticateSP&gt;&#xd;
+			&lt;ns:ProfileIDVersion&gt;&#xd;
+				&lt;ns:ID&gt;a0f29d6f-2cb6-4009-b1bd-6c9c876ca70b&lt;/ns:ID&gt;&#xd;
+				&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+			&lt;/ns:ProfileIDVersion&gt;&#xd;
+			&lt;ns:CustomerReference&gt;123456789&lt;/ns:CustomerReference&gt;&#xd;
+			&lt;ns:InputData&gt;&#xd;
+				&lt;ns:Images&gt;&#xd;
+					&lt;!--Zero or more repetitions:--&gt;&#xd;
+					&lt;ns:GlobalImage&gt;&#xd;
+						&lt;ns:Type&gt;?&lt;/ns:Type&gt;&#xd;
+						&lt;ns:AuthenticationID&gt;?&lt;/ns:AuthenticationID&gt;&#xd;
+					&lt;/ns:GlobalImage&gt;&#xd;
+				&lt;/ns:Images&gt;&#xd;
+				&lt;ns:Personal&gt;&#xd;
+					&lt;ns:PersonalDetails&gt;&#xd;
+						&lt;ns:Title&gt;Mr&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;Ima&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;Very&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;Smart&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;Male&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:DOBDay&gt;01&lt;/ns:DOBDay&gt;&#xd;
+						&lt;ns:DOBMonth&gt;04&lt;/ns:DOBMonth&gt;&#xd;
+						&lt;ns:DOBYear&gt;1990&lt;/ns:DOBYear&gt;&#xd;
+						&lt;ns:Birth&gt;&#xd;
+							&lt;ns:MothersMaidenName&gt;?&lt;/ns:MothersMaidenName&gt;&#xd;
+							&lt;ns:SurnameAtBirth&gt;?&lt;/ns:SurnameAtBirth&gt;&#xd;
+							&lt;ns:TownOfBirth&gt;?&lt;/ns:TownOfBirth&gt;&#xd;
+							&lt;ns:ProvinceOfBirth&gt;?&lt;/ns:ProvinceOfBirth&gt;&#xd;
+							&lt;ns:MunicipalityOfBirth&gt;?&lt;/ns:MunicipalityOfBirth&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;/ns:Birth&gt;&#xd;
+						&lt;ns:CountryOfBirth&gt;?&lt;/ns:CountryOfBirth&gt;&#xd;
+						&lt;ns:SecondSurname&gt;?&lt;/ns:SecondSurname&gt;&#xd;
+						&lt;ns:AdditionalMiddleNames&gt;&#xd;
+							&lt;!--Zero or more repetitions:--&gt;&#xd;
+							&lt;arr:string&gt;?&lt;/arr:string&gt;&#xd;
+						&lt;/ns:AdditionalMiddleNames&gt;&#xd;
+					&lt;/ns:PersonalDetails&gt;&#xd;
+					&lt;ns:AlternateName&gt;&#xd;
+						&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+						&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+						&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+						&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+						&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+						&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+						&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+						&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+						&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+						&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+						&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+						&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+					&lt;/ns:AlternateName&gt;&#xd;
+					&lt;ns:Aliases&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAlternateName&gt;&#xd;
+							&lt;ns:Title&gt;?&lt;/ns:Title&gt;&#xd;
+							&lt;ns:Forename&gt;?&lt;/ns:Forename&gt;&#xd;
+							&lt;ns:MiddleName&gt;?&lt;/ns:MiddleName&gt;&#xd;
+							&lt;ns:Surname&gt;?&lt;/ns:Surname&gt;&#xd;
+							&lt;ns:Gender&gt;?&lt;/ns:Gender&gt;&#xd;
+							&lt;ns:PeriodInUseStartDay&gt;?&lt;/ns:PeriodInUseStartDay&gt;&#xd;
+							&lt;ns:PeriodInUseStartMonth&gt;?&lt;/ns:PeriodInUseStartMonth&gt;&#xd;
+							&lt;ns:PeriodInUseStartYear&gt;?&lt;/ns:PeriodInUseStartYear&gt;&#xd;
+							&lt;ns:PeriodInUseEndDay&gt;?&lt;/ns:PeriodInUseEndDay&gt;&#xd;
+							&lt;ns:PeriodInUseEndMonth&gt;?&lt;/ns:PeriodInUseEndMonth&gt;&#xd;
+							&lt;ns:PeriodInUseEndYear&gt;?&lt;/ns:PeriodInUseEndYear&gt;&#xd;
+							&lt;ns:DocumentType&gt;?&lt;/ns:DocumentType&gt;&#xd;
+						&lt;/ns:GlobalAlternateName&gt;&#xd;
+					&lt;/ns:Aliases&gt;&#xd;
+				&lt;/ns:Personal&gt;&#xd;
+				&lt;ns:Addresses&gt;&#xd;
+					&lt;ns:CurrentAddress&gt;&#xd;
+						&lt;ns:Country&gt;United Kingdom&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;Buchan Drive Kingsway&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;GLOUCESTER&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;GL2 2EA&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;33&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:CurrentAddress&gt;&#xd;
+					&lt;ns:PreviousAddress1&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress1&gt;&#xd;
+					&lt;ns:PreviousAddress2&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress2&gt;&#xd;
+					&lt;ns:PreviousAddress3&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+						&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+						&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+						&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+						&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+						&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+						&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+						&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+						&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+						&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+						&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+						&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+						&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+						&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+						&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+						&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+						&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+						&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+						&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+						&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+						&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+						&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+						&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+						&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+						&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+						&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+						&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+						&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+					&lt;/ns:PreviousAddress3&gt;&#xd;
+					&lt;ns:HistoricAddresses&gt;&#xd;
+						&lt;!--Zero or more repetitions:--&gt;&#xd;
+						&lt;ns:GlobalAddress&gt;&#xd;
+							&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+							&lt;ns:Street&gt;?&lt;/ns:Street&gt;&#xd;
+							&lt;ns:SubStreet&gt;?&lt;/ns:SubStreet&gt;&#xd;
+							&lt;ns:City&gt;?&lt;/ns:City&gt;&#xd;
+							&lt;ns:SubCity&gt;?&lt;/ns:SubCity&gt;&#xd;
+							&lt;ns:StateDistrict&gt;?&lt;/ns:StateDistrict&gt;&#xd;
+							&lt;ns:POBox&gt;?&lt;/ns:POBox&gt;&#xd;
+							&lt;ns:Region&gt;?&lt;/ns:Region&gt;&#xd;
+							&lt;ns:Principality&gt;?&lt;/ns:Principality&gt;&#xd;
+							&lt;ns:ZipPostcode&gt;?&lt;/ns:ZipPostcode&gt;&#xd;
+							&lt;ns:DpsZipPlus&gt;?&lt;/ns:DpsZipPlus&gt;&#xd;
+							&lt;ns:CedexMailsort&gt;?&lt;/ns:CedexMailsort&gt;&#xd;
+							&lt;ns:Department&gt;?&lt;/ns:Department&gt;&#xd;
+							&lt;ns:Company&gt;?&lt;/ns:Company&gt;&#xd;
+							&lt;ns:Building&gt;?&lt;/ns:Building&gt;&#xd;
+							&lt;ns:SubBuilding&gt;?&lt;/ns:SubBuilding&gt;&#xd;
+							&lt;ns:Premise&gt;?&lt;/ns:Premise&gt;&#xd;
+							&lt;ns:AddressLine1&gt;?&lt;/ns:AddressLine1&gt;&#xd;
+							&lt;ns:AddressLine2&gt;?&lt;/ns:AddressLine2&gt;&#xd;
+							&lt;ns:AddressLine3&gt;?&lt;/ns:AddressLine3&gt;&#xd;
+							&lt;ns:AddressLine4&gt;?&lt;/ns:AddressLine4&gt;&#xd;
+							&lt;ns:AddressLine5&gt;?&lt;/ns:AddressLine5&gt;&#xd;
+							&lt;ns:AddressLine6&gt;?&lt;/ns:AddressLine6&gt;&#xd;
+							&lt;ns:AddressLine7&gt;?&lt;/ns:AddressLine7&gt;&#xd;
+							&lt;ns:AddressLine8&gt;?&lt;/ns:AddressLine8&gt;&#xd;
+							&lt;ns:FirstYearOfResidence&gt;?&lt;/ns:FirstYearOfResidence&gt;&#xd;
+							&lt;ns:LastYearOfResidence&gt;?&lt;/ns:LastYearOfResidence&gt;&#xd;
+							&lt;ns:FirstMonthOfResidence&gt;?&lt;/ns:FirstMonthOfResidence&gt;&#xd;
+							&lt;ns:LastMonthOfResidence&gt;?&lt;/ns:LastMonthOfResidence&gt;&#xd;
+						&lt;/ns:GlobalAddress&gt;&#xd;
+					&lt;/ns:HistoricAddresses&gt;&#xd;
+				&lt;/ns:Addresses&gt;&#xd;
+				&lt;ns:IdentityDocuments&gt;&#xd;
+					&lt;ns:China&gt;&#xd;
+						&lt;ns:ResidentIdentityCard&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:ResidentIdentityCard&gt;&#xd;
+					&lt;/ns:China&gt;&#xd;
+					&lt;ns:NewZealand&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:Version&gt;?&lt;/ns:Version&gt;&#xd;
+							&lt;ns:VehicleRegistration&gt;?&lt;/ns:VehicleRegistration&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:NewZealand&gt;&#xd;
+					&lt;ns:InternationalPassport&gt;&#xd;
+						&lt;ns:Number&gt;987654321&lt;/ns:Number&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+						&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+						&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+						&lt;ns:ShortPassportNumber&gt;?&lt;/ns:ShortPassportNumber&gt;&#xd;
+					&lt;/ns:InternationalPassport&gt;&#xd;
+					&lt;ns:EuropeanIdentityCard&gt;&#xd;
+						&lt;ns:Line1&gt;?&lt;/ns:Line1&gt;&#xd;
+						&lt;ns:Line2&gt;?&lt;/ns:Line2&gt;&#xd;
+						&lt;ns:Line3&gt;?&lt;/ns:Line3&gt;&#xd;
+						&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:CountryOfNationality&gt;?&lt;/ns:CountryOfNationality&gt;&#xd;
+						&lt;ns:CountryOfIssue&gt;?&lt;/ns:CountryOfIssue&gt;&#xd;
+					&lt;/ns:EuropeanIdentityCard&gt;&#xd;
+					&lt;ns:UK&gt;&#xd;
+						&lt;ns:Passport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Passport&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+							&lt;ns:Microfiche&gt;?&lt;/ns:Microfiche&gt;&#xd;
+							&lt;ns:IssueDay&gt;?&lt;/ns:IssueDay&gt;&#xd;
+							&lt;ns:IssueMonth&gt;?&lt;/ns:IssueMonth&gt;&#xd;
+							&lt;ns:IssueYear&gt;?&lt;/ns:IssueYear&gt;&#xd;
+							&lt;ns:IssueNumber&gt;?&lt;/ns:IssueNumber&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+						&lt;ns:NationalInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:NationalInsuranceNumber&gt;&#xd;
+					&lt;/ns:UK&gt;&#xd;
+					&lt;ns:Australia&gt;&#xd;
+						&lt;ns:ShortPassport&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:CountryOfOrigin&gt;?&lt;/ns:CountryOfOrigin&gt;&#xd;
+						&lt;/ns:ShortPassport&gt;&#xd;
+						&lt;ns:Medicare&gt;&#xd;
+							&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+							&lt;ns:ReferenceNumber&gt;?&lt;/ns:ReferenceNumber&gt;&#xd;
+							&lt;ns:SurnameAtCitizenship&gt;?&lt;/ns:SurnameAtCitizenship&gt;&#xd;
+							&lt;ns:MiddleNameOnCard&gt;?&lt;/ns:MiddleNameOnCard&gt;&#xd;
+							&lt;ns:CardColour&gt;?&lt;/ns:CardColour&gt;&#xd;
+							&lt;ns:ExpiryDay&gt;?&lt;/ns:ExpiryDay&gt;&#xd;
+							&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+							&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;/ns:Medicare&gt;&#xd;
+						&lt;ns:DrivingLicence&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicence&gt;&#xd;
+					&lt;/ns:Australia&gt;&#xd;
+					&lt;ns:US&gt;&#xd;
+						&lt;ns:DrivingLicense&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;/ns:DrivingLicense&gt;&#xd;
+						&lt;ns:SocialSecurity&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialSecurity&gt;&#xd;
+					&lt;/ns:US&gt;&#xd;
+					&lt;ns:IdentityCard&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;/ns:IdentityCard&gt;&#xd;
+					&lt;ns:Canada&gt;&#xd;
+						&lt;ns:SocialInsuranceNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:SocialInsuranceNumber&gt;&#xd;
+					&lt;/ns:Canada&gt;&#xd;
+					&lt;ns:Mexico&gt;&#xd;
+						&lt;ns:TaxIdentificationNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIdentificationNumber&gt;&#xd;
+					&lt;/ns:Mexico&gt;&#xd;
+					&lt;ns:Brazil&gt;&#xd;
+						&lt;ns:CPFNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:CPFNumber&gt;&#xd;
+					&lt;/ns:Brazil&gt;&#xd;
+					&lt;ns:Spain&gt;&#xd;
+						&lt;ns:TaxIDNumber&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+						&lt;/ns:TaxIDNumber&gt;&#xd;
+					&lt;/ns:Spain&gt;&#xd;
+				&lt;/ns:IdentityDocuments&gt;&#xd;
+				&lt;ns:AddressDocuments&gt;&#xd;
+					&lt;ns:UKAddressDocuments&gt;&#xd;
+						&lt;ns:ElectricitySupplier&gt;&#xd;
+							&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+							&lt;ns:MailSort&gt;?&lt;/ns:MailSort&gt;&#xd;
+							&lt;ns:Postcode&gt;?&lt;/ns:Postcode&gt;&#xd;
+						&lt;/ns:ElectricitySupplier&gt;&#xd;
+					&lt;/ns:UKAddressDocuments&gt;&#xd;
+				&lt;/ns:AddressDocuments&gt;&#xd;
+				&lt;ns:ContactDetails&gt;&#xd;
+					&lt;ns:LandTelephone&gt;&#xd;
+						&lt;ns:ExDirectory&gt;?&lt;/ns:ExDirectory&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:LandTelephone&gt;&#xd;
+					&lt;ns:MobileTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:MobileTelephone&gt;&#xd;
+					&lt;ns:Email&gt;?&lt;/ns:Email&gt;&#xd;
+					&lt;ns:WorkTelephone&gt;&#xd;
+						&lt;ns:Number&gt;?&lt;/ns:Number&gt;&#xd;
+					&lt;/ns:WorkTelephone&gt;&#xd;
+				&lt;/ns:ContactDetails&gt;&#xd;
+				&lt;ns:Employment&gt;&#xd;
+					&lt;ns:ResidenceType&gt;?&lt;/ns:ResidenceType&gt;&#xd;
+					&lt;ns:EmploymentStatus&gt;?&lt;/ns:EmploymentStatus&gt;&#xd;
+					&lt;ns:CurrentTime&gt;?&lt;/ns:CurrentTime&gt;&#xd;
+				&lt;/ns:Employment&gt;&#xd;
+				&lt;ns:BankingDetails&gt;&#xd;
+					&lt;ns:BankAccount&gt;&#xd;
+						&lt;ns:SortCode&gt;?&lt;/ns:SortCode&gt;&#xd;
+						&lt;ns:AccountNumber&gt;?&lt;/ns:AccountNumber&gt;&#xd;
+					&lt;/ns:BankAccount&gt;&#xd;
+					&lt;ns:CreditDebitCard&gt;&#xd;
+						&lt;ns:CardHolderName&gt;?&lt;/ns:CardHolderName&gt;&#xd;
+						&lt;ns:CardNumber&gt;?&lt;/ns:CardNumber&gt;&#xd;
+						&lt;ns:ExpiryMonth&gt;?&lt;/ns:ExpiryMonth&gt;&#xd;
+						&lt;ns:ExpiryYear&gt;?&lt;/ns:ExpiryYear&gt;&#xd;
+						&lt;ns:StartMonth&gt;?&lt;/ns:StartMonth&gt;&#xd;
+						&lt;ns:StartYear&gt;?&lt;/ns:StartYear&gt;&#xd;
+						&lt;ns:CardIssueNumber&gt;?&lt;/ns:CardIssueNumber&gt;&#xd;
+						&lt;ns:CardType&gt;?&lt;/ns:CardType&gt;&#xd;
+						&lt;ns:CardVerificationCode&gt;?&lt;/ns:CardVerificationCode&gt;&#xd;
+						&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+						&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+						&lt;ns:MerchantData&gt;?&lt;/ns:MerchantData&gt;&#xd;
+						&lt;ns:ThreeDSecureResponse&gt;?&lt;/ns:ThreeDSecureResponse&gt;&#xd;
+					&lt;/ns:CreditDebitCard&gt;&#xd;
+				&lt;/ns:BankingDetails&gt;&#xd;
+				&lt;ns:GlobalGeneric&gt;&#xd;
+					&lt;ns:Generic1&gt;?&lt;/ns:Generic1&gt;&#xd;
+					&lt;ns:Generic2&gt;?&lt;/ns:Generic2&gt;&#xd;
+					&lt;ns:Generic3&gt;?&lt;/ns:Generic3&gt;&#xd;
+					&lt;ns:Generic4&gt;?&lt;/ns:Generic4&gt;&#xd;
+					&lt;ns:Generic5&gt;?&lt;/ns:Generic5&gt;&#xd;
+					&lt;ns:Generic6&gt;?&lt;/ns:Generic6&gt;&#xd;
+					&lt;ns:Generic7&gt;?&lt;/ns:Generic7&gt;&#xd;
+					&lt;ns:Generic8&gt;?&lt;/ns:Generic8&gt;&#xd;
+					&lt;ns:Generic9&gt;?&lt;/ns:Generic9&gt;&#xd;
+					&lt;ns:Generic10&gt;?&lt;/ns:Generic10&gt;&#xd;
+					&lt;ns:Generic11&gt;?&lt;/ns:Generic11&gt;&#xd;
+					&lt;ns:Generic12&gt;?&lt;/ns:Generic12&gt;&#xd;
+					&lt;ns:Generic13&gt;?&lt;/ns:Generic13&gt;&#xd;
+					&lt;ns:Generic14&gt;?&lt;/ns:Generic14&gt;&#xd;
+					&lt;ns:Generic15&gt;?&lt;/ns:Generic15&gt;&#xd;
+					&lt;ns:Generic16&gt;?&lt;/ns:Generic16&gt;&#xd;
+					&lt;ns:Generic17&gt;?&lt;/ns:Generic17&gt;&#xd;
+					&lt;ns:Generic18&gt;?&lt;/ns:Generic18&gt;&#xd;
+					&lt;ns:Generic19&gt;?&lt;/ns:Generic19&gt;&#xd;
+					&lt;ns:Generic20&gt;?&lt;/ns:Generic20&gt;&#xd;
+				&lt;/ns:GlobalGeneric&gt;&#xd;
+				&lt;ns:Location&gt;&#xd;
+					&lt;ns:Country&gt;?&lt;/ns:Country&gt;&#xd;
+					&lt;ns:State&gt;?&lt;/ns:State&gt;&#xd;
+					&lt;ns:BlackBoxID&gt;?&lt;/ns:BlackBoxID&gt;&#xd;
+					&lt;ns:IndividualID&gt;?&lt;/ns:IndividualID&gt;&#xd;
+					&lt;ns:AcceptHeaders&gt;?&lt;/ns:AcceptHeaders&gt;&#xd;
+					&lt;ns:UserAgent&gt;?&lt;/ns:UserAgent&gt;&#xd;
+					&lt;ns:IPAddress&gt;?&lt;/ns:IPAddress&gt;&#xd;
+				&lt;/ns:Location&gt;&#xd;
+				&lt;ns:Consent&gt;&#xd;
+					&lt;ns:UKDriverConsent&gt;?&lt;/ns:UKDriverConsent&gt;&#xd;
+				&lt;/ns:Consent&gt;&#xd;
+			&lt;/ns:InputData&gt;&#xd;
+		&lt;/ns:AuthenticateSP&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">8081</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="TestPlan.comments">	</stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
@@ -1374,8 +3199,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
@@ -1384,8 +3207,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry WIN - device 99" enabled="false">
@@ -1427,8 +3251,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
@@ -1437,8 +3259,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry PLACE" enabled="false">
@@ -1480,8 +3303,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
@@ -1490,8 +3311,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry EACH_WAY" enabled="false">
@@ -1535,8 +3357,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
@@ -1545,8 +3365,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry MULTI" enabled="false">
@@ -1584,8 +3405,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
@@ -1594,8 +3413,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02 betslip enquiry BUNDLE" enabled="false">
@@ -1633,8 +3453,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/betslip-enquiry</stringProp>
@@ -1643,8 +3461,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03 cashout REQUEST" enabled="false">
@@ -1679,8 +3498,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/cashout</stringProp>
@@ -1689,8 +3506,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03 cashout OFFER" enabled="false">
@@ -1725,8 +3543,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/cashout</stringProp>
@@ -1735,8 +3551,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03 cashout RETRIEVE" enabled="false">
@@ -1771,8 +3588,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/cashout</stringProp>
@@ -1781,8 +3596,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03 cashout ACCEPT" enabled="false">
@@ -1814,8 +3630,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/cashout</stringProp>
@@ -1824,8 +3638,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="04 cancel" enabled="false">
@@ -1855,8 +3670,6 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${SVE_IP}</stringProp>
           <stringProp name="HTTPSampler.port">${SVE_PORT}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">CTG/services/cancelbet</stringProp>
@@ -1865,8 +3678,9 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
         <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="CAM_Login" enabled="false">
@@ -1899,5 +3713,9 @@
         <hashTree/>
       </hashTree>
     </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
   </hashTree>
 </jmeterTestPlan>
